@@ -1,0 +1,1301 @@
+[
+  {
+    "id": "sains_u1_q1",
+    "topic_id": "sains_u1",
+    "question_text": "In an experiment testing how heat affects liquid volume, what is the Manipulated Variable (Pemboleh Ubah Dimanipulasikan)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "The manipulated variable is what we intentionally change in an experiment (Temperature/Heat level).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Temperature of water (°C)", "is_correct": 1 },
+      { "text": "Final volume of water", "is_correct": 0 },
+      { "text": "Type of beaker used", "is_correct": 0 },
+      { "text": "Initial volume of water", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u1_q2",
+    "topic_id": "sains_u1",
+    "question_text": "A student states: 'As the surface roughness increases, the friction force produced increases.' What scientific skill is this?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Formulating a hypothesis is making a general testable statement linking the manipulated and responding variables.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Formulating a Hypothesis", "is_correct": 1 },
+      { "text": "Making an Inference", "is_correct": 0 },
+      { "text": "Predicting", "is_correct": 0 },
+      { "text": "Defining Operationally", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u1_q3",
+    "topic_id": "sains_u1",
+    "question_text": "Plants in Pot A received 100ml water daily, while Pot B received 10ml water daily. After 2 weeks, Pot A grew 15cm taller than Pot B. What is the Responding Variable?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "The responding variable is the outcome measured at the end of the experiment (Height of plant).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Height of plant (cm)", "is_correct": 1 },
+      { "text": "Amount of water given daily", "is_correct": 0 },
+      { "text": "Type of soil used", "is_correct": 0 },
+      { "text": "Number of pots", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u1_q4",
+    "topic_id": "sains_u1",
+    "question_text": "When measuring the volume of water in a graduated cylinder, how should your line of sight be aligned to prevent parallax error?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Line of sight must be perpendicular (level) with the lowest point of the liquid meniscus.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Level with the bottom of the meniscus", "is_correct": 1 },
+      { "text": "Looking down from top of beaker", "is_correct": 0 },
+      { "text": "Level with the top edge of meniscus", "is_correct": 0 },
+      { "text": "Looking from an 45 degree angle", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u1_q5",
+    "topic_id": "sains_u1",
+    "question_text": "What is an Inference in a scientific investigation?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "An inference is an early reason or explanation for an observation based on evidence.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "An explanation or reason for an observation", "is_correct": 1 },
+      { "text": "A guess without looking at data", "is_correct": 0 },
+      { "text": "The instrument used to weigh items", "is_correct": 0 },
+      { "text": "The final conclusion of an experiment", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u1_q6",
+    "topic_id": "sains_u1",
+    "question_text": "State whether true or false: A Constant Variable (Pemboleh Ubah Dimalarkan) must be changed throughout the experiment.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "False! A constant variable must be kept identical/fixed throughout the experiment to ensure a fair test.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 0 },
+      { "text": "False", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u1_q7",
+    "topic_id": "sains_u1",
+    "question_text": "Identify the standard SI unit for measuring mass in scientific experiments.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "The SI unit for mass is kilogram (kg). In lab experiments, grams (g) are commonly recorded.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "kg", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u1_q8",
+    "topic_id": "sains_u1",
+    "question_text": "If a candle burns for 10 minutes when covered by a 500ml jar, how many minutes will it burn when covered by a 1000ml jar? (Type numerical answer).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "The 1000ml jar has double the air/oxygen volume, so the candle burns for 20 minutes.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "20", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u1_q9",
+    "topic_id": "sains_u1",
+    "question_text": "Match the Science Process Skill to its correct definition.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Scientific skills structure proper experimental investigations.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Observing", "right": "Using 5 senses to gather information" },
+      { "left": "Classifying", "right": "Grouping objects based on common characteristics" },
+      { "left": "Predicting", "right": "Forecasting outcome based on prior data" },
+      { "left": "Hypothesising", "right": "Making testable statement between variables" }
+    ]
+  },
+  {
+    "id": "sains_u1_q10",
+    "topic_id": "sains_u1",
+    "question_text": "Which manipulative skill ensures laboratory safety after completing a dissection or chemical experiment?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Cleaning science equipment correctly and storing them safely is a core manipulative skill.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Cleaning and storing science apparatus correctly", "is_correct": 1 },
+      { "text": "Leaving apparatus in the sink", "is_correct": 0 },
+      { "text": "Throwing glassware into general trash", "is_correct": 0 },
+      { "text": "Washing hands before heating chemicals", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u2_q1",
+    "topic_id": "sains_u2",
+    "question_text": "Which of the following microorganisms belongs to the Virus group?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Influenza, HIV, and Bacteriophage are viruses, which are the smallest microorganisms.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Influenza Virus", "is_correct": 1 },
+      { "text": "Amoeba", "is_correct": 0 },
+      { "text": "Yeast (Yis)", "is_correct": 0 },
+      { "text": "Spirogyra", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u2_q2",
+    "topic_id": "sains_u2",
+    "question_text": "Which type of microorganism contains chlorophyll and can undergo photosynthesis like plants?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Algae (Alga) like Chlamydomonas contain chlorophyll and make their own food through photosynthesis.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Algae (Alga)", "is_correct": 1 },
+      { "text": "Fungi", "is_correct": 0 },
+      { "text": "Protozoa", "is_correct": 0 },
+      { "text": "Bacteria", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u2_q3",
+    "topic_id": "sains_u2",
+    "question_text": "What are the three essential life processes carried out by microorganisms?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Microorganisms undergo respiration, growth, and movement.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Respiration, Growth, Movement", "is_correct": 1 },
+      { "text": "Melting, Evaporation, Boiling", "is_correct": 0 },
+      { "text": "Photosynthesis, Digestion, Excretion", "is_correct": 0 },
+      { "text": "Conduction, Convection, Radiation", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u2_q4",
+    "topic_id": "sains_u2",
+    "question_text": "A slice of bread left on a table grows dark mold spots after 5 days. What micro-organism is responsible?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Bread mold (Mucor) is a fungus that grows in warm, moist conditions.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Mucor (Fungi)", "is_correct": 1 },
+      { "text": "Salmonella (Bacteria)", "is_correct": 0 },
+      { "text": "Paramecium (Protozoa)", "is_correct": 0 },
+      { "text": "Volvox (Algae)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u2_q5",
+    "topic_id": "sains_u2",
+    "question_text": "Which useful microorganism is used in making yogurt and cheese by fermenting milk?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Lactobacillus bacteria ferments lactose in milk to produce lactic acid, turning milk into yogurt.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Lactobacillus (Bacteria)", "is_correct": 1 },
+      { "text": "Penicillium (Fungi)", "is_correct": 0 },
+      { "text": "Amoeba (Protozoa)", "is_correct": 0 },
+      { "text": "Bacteriophage (Virus)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u2_q6",
+    "topic_id": "sains_u2",
+    "question_text": "State whether true or false: Microorganisms can live and grow without any water or moisture.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "False! Water/moisture is an essential condition required for microorganisms to survive and reproduce.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 0 },
+      { "text": "False", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u2_q7",
+    "topic_id": "sains_u2",
+    "question_text": "How many main types of microorganisms are studied in the Year 6 DLP Science textbook?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "There are 5 main groups: Fungi, Bacteria, Algae, Protozoa, and Virus.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "5", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u2_q8",
+    "topic_id": "sains_u2",
+    "question_text": "Which instrument must be used to observe microorganisms clearly because they cannot be seen with naked eyes?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "A microscope magnifies microscopic organisms hundreds or thousands of times.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Microscope", "is_correct": 1 },
+      { "text": "Telescope", "is_correct": 0 },
+      { "text": "Periscope", "is_correct": 0 },
+      { "text": "Magnifying Glass", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u2_q9",
+    "topic_id": "sains_u2",
+    "question_text": "Match the microorganism to its specific group.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Grouping microorganisms based on structure and kingdom.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Yeast (Yis)", "right": "Fungi" },
+      { "left": "E. coli", "right": "Bacteria" },
+      { "left": "Paramecium", "right": "Protozoa" },
+      { "left": "Spirulina", "right": "Algae" }
+    ]
+  },
+  {
+    "id": "sains_u2_q10",
+    "topic_id": "sains_u2",
+    "question_text": "Which disease is caused by a harmful bacterial infection rather than a virus?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Tuberculosis (TB) and Cholera are caused by bacterial infections, whereas Dengue and Influenza are viral.",
+    "difficulty": "hard",
+    "options": [
+      { "text": "Tuberculosis (TB)", "is_correct": 1 },
+      { "text": "Dengue Fever", "is_correct": 0 },
+      { "text": "Influenza", "is_correct": 0 },
+      { "text": "Chickenpox", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u3_q1",
+    "topic_id": "sains_u3",
+    "question_text": "Which factor causes intraspecific competition among animals of the SAME species?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Animals of the same species compete for Food, Water, Shelter/Territory, and Mates.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Food, Water, Territory, and Mates", "is_correct": 1 },
+      { "text": "Sunlight and Carbon dioxide only", "is_correct": 0 },
+      { "text": "Air pressure and Gravity", "is_correct": 0 },
+      { "text": "Soil acidity and Fertilizer", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u3_q2",
+    "topic_id": "sains_u3",
+    "question_text": "What type of symbiosis exists between a clownfish and a sea anemone, where BOTH organisms benefit?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Mutualism (+/+) benefits both species: clownfish gets protection while sea anemone gets food scraps and cleaning.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Mutualism", "is_correct": 1 },
+      { "text": "Commensalism", "is_correct": 0 },
+      { "text": "Parasitism", "is_correct": 0 },
+      { "text": "Competition", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u3_q3",
+    "topic_id": "sains_u3",
+    "question_text": "A remora fish attaches to a shark. The remora gets leftover food and protection, while the shark is unaffected. What is this symbiosis?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Commensalism (+/0) benefits one organism without harming or benefiting the other.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Commensalism", "is_correct": 1 },
+      { "text": "Mutualism", "is_correct": 0 },
+      { "text": "Parasitism", "is_correct": 0 },
+      { "text": "Prey-Predator", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u3_q4",
+    "topic_id": "sains_u3",
+    "question_text": "Rafflesian flowers (Bunga Rafflesia) absorb water and nutrients directly from host vine roots, harming the host vine. What interaction is this?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Rafflesia is a parasitic plant that harms its host vine (Parasitism).",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Parasitism", "is_correct": 1 },
+      { "text": "Commensalism", "is_correct": 0 },
+      { "text": "Mutualism", "is_correct": 0 },
+      { "text": "Cooperation", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u3_q5",
+    "topic_id": "sains_u3",
+    "question_text": "What do plants compete for when planted closely together in a small pot?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Plants compete for Sunlight, Water, Minerals/Nutrients, and Space.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Sunlight, Water, Nutrients, and Space", "is_correct": 1 },
+      { "text": "Mates and Prey", "is_correct": 0 },
+      { "text": "Oxygen and Carbon monoxide", "is_correct": 0 },
+      { "text": "Pesticides and Insects", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u3_q6",
+    "topic_id": "sains_u3",
+    "question_text": "State whether true or false: Solitary animals (like tigers and eagles) live in large packs to hunt together.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "False! Solitary animals live and hunt alone except during mating season.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 0 },
+      { "text": "False", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u3_q7",
+    "topic_id": "sains_u3",
+    "question_text": "How many main types of symbiotic relationships exist among organisms (+/+, +/0, +/-)?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "There are 3 main types: Mutualism, Commensalism, and Parasitism.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "3", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u3_q8",
+    "topic_id": "sains_u3",
+    "question_text": "Which animal lives in a social group (lives in groups) to protect each other and build shelters?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Elephants, ants, bees, and wolves live in organized social groups.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Honeybee (Lebah)", "is_correct": 1 },
+      { "text": "Leopard (Harimau Bintang)", "is_correct": 0 },
+      { "text": "Eagle (Helang)", "is_correct": 0 },
+      { "text": "Pangolin (Tenggiling)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u3_q9",
+    "topic_id": "sains_u3",
+    "question_text": "Match the symbiotic pair to its correct classification.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Classification of animal & plant symbiotic interactions.",
+    "difficulty": "hard",
+    "matching_pairs": [
+      { "left": "Fungus & Algae (Lichen)", "right": "Mutualism (+/+)" },
+      { "left": "Bird's Nest Fern on Tree", "right": "Commensalism (+/0)" },
+      { "left": "Tick (Kutu) on Dog", "right": "Parasitism (+/-)" },
+      { "left": "Oxpecker & Rhinoceros", "right": "Mutualism (+/+)" }
+    ]
+  },
+  {
+    "id": "sains_u3_q10",
+    "topic_id": "sains_u3",
+    "question_text": "What is an advantage of animals living in groups?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Living in groups helps animals defend against predators and hunt large prey efficiently.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Safety and defense against predators", "is_correct": 1 },
+      { "text": "Elimination of all competition", "is_correct": 0 },
+      { "text": "No need to find food", "is_correct": 0 },
+      { "text": "Decreased camouflage ability", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u4_q1",
+    "topic_id": "sains_u4",
+    "question_text": "Which animal species is EXTINCT (Pupus) and no longer exists anywhere on Earth?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Dodo birds, T-Rex, Quagga, and Tasmanian Tigers are extinct animals.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Dodo Bird", "is_correct": 1 },
+      { "text": "Orangutan", "is_correct": 0 },
+      { "text": "Malayan Tiger", "is_correct": 0 },
+      { "text": "Hawksbill Turtle", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u4_q2",
+    "topic_id": "sains_u4",
+    "question_text": "What is the meaning of Preservation (Pemeliharaan)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Preservation means keeping habitats in their original natural state without human destruction.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Keeping habitats untouched in original natural state", "is_correct": 1 },
+      { "text": "Rebuilding damaged forests after logging", "is_correct": 0 },
+      { "text": "Hunting animals legally during summer", "is_correct": 0 },
+      { "text": "Breeding animals in zoos for sale", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u4_q3",
+    "topic_id": "sains_u4",
+    "question_text": "What is Conservation (Pemuliharaan)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Conservation involves active efforts to restore and rehabilitate damaged ecosystems (e.g. replanting trees).",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Restoring and rehabilitating damaged environments", "is_correct": 1 },
+      { "text": "Clearing forests for palm oil plantations", "is_correct": 0 },
+      { "text": "Building highways through national parks", "is_correct": 0 },
+      { "text": "Exporting endangered animals", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u4_q4",
+    "topic_id": "sains_u4",
+    "question_text": "Which plant species in Malaysia is threatened with extinction due to illegal wild harvesting?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Pitcher plants (Periuk Kera), Wild Orchids, and Rafflesia are endangered plant species.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Wild Slipper Orchid (Orkid Selipar)", "is_correct": 1 },
+      { "text": "Hibiscus (Bunga Raya)", "is_correct": 0 },
+      { "text": "Rubber Tree", "is_correct": 0 },
+      { "text": "Tapioca Plant", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u4_q5",
+    "topic_id": "sains_u4",
+    "question_text": "Which illegal human activity is the PRIMARY cause of habitat destruction for Malayan Tapirs and Tigers?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Illegal deforestation and uncontrolled logging destroy natural wildlife habitats.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Illegal logging and deforestation", "is_correct": 1 },
+      { "text": "Organic farming", "is_correct": 0 },
+      { "text": "Solar energy generation", "is_correct": 0 },
+      { "text": "Rainwater harvesting", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u4_q6",
+    "topic_id": "sains_u4",
+    "question_text": "State whether true or false: Reforestation (Penanaman semula hutan) is an example of Conservation.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! Replanting trees in logged forests restores damaged ecosystems (Conservation).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u4_q7",
+    "topic_id": "sains_u4",
+    "question_text": "How many National Parks (Taman Negara) in Malaysia serve as protected reserves for endangered wildlife?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Malaysia has multiple national parks protecting rainforest biodiversity (e.g. Taman Negara Pahang, Endau-Rompin).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "1", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u4_q8",
+    "topic_id": "sains_u4",
+    "question_text": "Which organization in Malaysia enforces wildlife protection laws and combats poaching?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "PERHILITAN (Department of Wildlife and National Parks) manages wildlife protection laws.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "PERHILITAN", "is_correct": 1 },
+      { "text": "JPA", "is_correct": 0 },
+      { "text": "POS Malaysia", "is_correct": 0 },
+      { "text": "SIRIM", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u4_q9",
+    "topic_id": "sains_u4",
+    "question_text": "Match the species status to its correct category.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Classifying species based on survival threat level.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Dodo Bird", "right": "Extinct Species (Pupus)" },
+      { "left": "Malayan Tiger", "right": "Endangered Species (Terancam)" },
+      { "left": "Turtle Sanctuary", "right": "Preservation Effort" },
+      { "left": "Replanting Mangroves", "right": "Conservation Effort" }
+    ]
+  },
+  {
+    "id": "sains_u4_q10",
+    "topic_id": "sains_u4",
+    "question_text": "Why are Sea Turtles endangered in Malaysia?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Poaching of turtle eggs, plastic pollution in oceans, and destruction of nesting beaches threaten sea turtles.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Egg poaching, plastic pollution, and beach destruction", "is_correct": 1 },
+      { "text": "Overeating jellyfish only", "is_correct": 0 },
+      { "text": "Excessive rainfall on ocean surface", "is_correct": 0 },
+      { "text": "Competition with coral reefs", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u5_q1",
+    "topic_id": "sains_u5",
+    "question_text": "What is the definition of Force (Daya)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Force is a push (tolakan) or a pull (tarikan) exerted on an object.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "A push or a pull", "is_correct": 1 },
+      { "text": "The mass of an object in space", "is_correct": 0 },
+      { "text": "The speed of light in a vacuum", "is_correct": 0 },
+      { "text": "The chemical energy of food", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u5_q2",
+    "topic_id": "sains_u5",
+    "question_text": "Which action involves BOTH pushing and pulling forces simultaneously?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Sawing wood or playing an accordion involves alternating push and pull forces.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Sawing a piece of wood", "is_correct": 1 },
+      { "text": "Kicking a football", "is_correct": 0 },
+      { "text": "Plucking a rambutan fruit", "is_correct": 0 },
+      { "text": "Opening a refrigerator drawer", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u5_q3",
+    "topic_id": "sains_u5",
+    "question_text": "What effect of force is demonstrated when a goalkeeper catches a moving football?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Catching a moving ball demonstrates that force can stop a moving object.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Force stops a moving object", "is_correct": 1 },
+      { "text": "Force changes the shape of object", "is_correct": 0 },
+      { "text": "Force increases mass of ball", "is_correct": 0 },
+      { "text": "Force creates new energy", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u5_q4",
+    "topic_id": "sains_u5",
+    "question_text": "Which surface produces the HIGHEST friction force against a sliding wooden block?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Coarse sandpaper has a rough texture which creates high friction force.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Coarse Sandpaper (Kertas Pasir Kasar)", "is_correct": 1 },
+      { "text": "Glass sheet", "is_correct": 0 },
+      { "text": "Waxed tile", "is_correct": 0 },
+      { "text": "Oiled plastic sheet", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u5_q5",
+    "topic_id": "sains_u5",
+    "question_text": "How can friction be REDUCED to move heavy machinery smoothly?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Using lubricants (oil, grease) or ball bearings reduces friction between sliding surfaces.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Applying grease or ball bearings", "is_correct": 1 },
+      { "text": "Making surface rougher with sand", "is_correct": 0 },
+      { "text": "Increasing object weight", "is_correct": 0 },
+      { "text": "Using rubber grooves", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u5_q6",
+    "topic_id": "sains_u5",
+    "question_text": "State whether true or false: Friction force acts in the SAME direction as the movement of an object.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "False! Friction force ALWAYS acts in the OPPOSITE direction of movement.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 0 },
+      { "text": "False", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u5_q7",
+    "topic_id": "sains_u5",
+    "question_text": "What is the standard unit for measuring force?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Force is measured in Newton (N) using a Spring Balance (Neraca Musim).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "N", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u5_q8",
+    "topic_id": "sains_u5",
+    "question_text": "A toy car travels 100 cm in 5 seconds. Calculate its speed in cm/s. (Type numerical answer).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Speed = Distance / Time = 100 cm / 5 s = 20 cm/s.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "20", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u5_q9",
+    "topic_id": "sains_u5",
+    "question_text": "Match the force application to its advantage/disadvantage.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Friction has both advantages and disadvantages in daily life.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Tire Tread Grooves", "right": "Increases grip on wet roads" },
+      { "left": "Brake Pads on Bicycle", "right": "Stops wheel via high friction" },
+      { "left": "Engine Wear & Heat", "right": "Disadvantage of friction" },
+      { "left": "Using Lubricant Oil", "right": "Reduces unwanted friction" }
+    ]
+  },
+  {
+    "id": "sains_u5_q10",
+    "topic_id": "sains_u5",
+    "question_text": "Which effect of force is demonstrated when squeezing a piece of modeling clay (playdough)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Squeezing clay changes its physical shape.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Force changes the shape of an object", "is_correct": 1 },
+      { "text": "Force changes direction of wind", "is_correct": 0 },
+      { "text": "Force stops light rays", "is_correct": 0 },
+      { "text": "Force increases mass of clay", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u6_q1",
+    "topic_id": "sains_u6",
+    "question_text": "Why does food spoil (makanan menjadi rosak)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Food spoils due to the action and growth of microorganisms (bacteria and fungi).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Action and growth of bacteria and fungi", "is_correct": 1 },
+      { "text": "Evaporation of minerals", "is_correct": 0 },
+      { "text": "Exposure to neon light", "is_correct": 0 },
+      { "text": "Freezing in ice trays", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u6_q2",
+    "topic_id": "sains_u6",
+    "question_text": "What is the main principle of Drying (Pengeringan) food under hot sunlight?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Drying removes water/moisture, preventing bacteria from multiplying.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Removes moisture from food", "is_correct": 1 },
+      { "text": "Removes air from container", "is_correct": 0 },
+      { "text": "Increases acidity of food", "is_correct": 0 },
+      { "text": "Freezes water into ice crystals", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u6_q3",
+    "topic_id": "sains_u6",
+    "question_text": "In Pasteurisation, milk is heated to approximately 72°C for 15 seconds and then cooled rapidly. Why is it cooled rapidly?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Rapid cooling prevents surviving spores from germinating while retaining flavor.",
+    "difficulty": "hard",
+    "options": [
+      { "text": "To kill remaining bacteria without destroying nutrients & taste", "is_correct": 1 },
+      { "text": "To turn milk into butter immediately", "is_correct": 0 },
+      { "text": "To evaporate all water content", "is_correct": 0 },
+      { "text": "To add carbon dioxide gas", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u6_q4",
+    "topic_id": "sains_u6",
+    "question_text": "Which preservation method involves soaking food in vinegar or sugar solution to create an acidic environment?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Pickling (Jeruk) creates an acidic environment where bacteria cannot survive.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Pickling (Penjerukan)", "is_correct": 1 },
+      { "text": "Canning (Pengatinan)", "is_correct": 0 },
+      { "text": "Waxing (Pewalasan)", "is_correct": 0 },
+      { "text": "Boiling (Pendidihan)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u6_q5",
+    "topic_id": "sains_u6",
+    "question_text": "Why does Vacuum Packing (Pembungkusan Vakum) prevent food spoilage?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Vacuum packing removes air (oxygen) so bacteria cannot undergo respiration.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Removes air so bacteria cannot respire", "is_correct": 1 },
+      { "text": "Adds high heat to food", "is_correct": 0 },
+      { "text": "Increases water volume in bag", "is_correct": 0 },
+      { "text": "Adds salt crystals", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u6_q6",
+    "topic_id": "sains_u6",
+    "question_text": "State whether true or false: Freezing food below 0°C kills all bacteria permanently.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "False! Freezing INACTIVATES (dormant) bacteria but does not kill them. They grow again when thawed.",
+    "difficulty": "hard",
+    "options": [
+      { "text": "True", "is_correct": 0 },
+      { "text": "False", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u6_q7",
+    "topic_id": "sains_u6",
+    "question_text": "What temperature in °C is milk heated to during standard Pasteurisation for 15 seconds? (Type numerical answer).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Milk is heated to 72°C for 15 seconds (or 63°C for 30 minutes).",
+    "difficulty": "medium",
+    "options": [
+      { "text": "72", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u6_q8",
+    "topic_id": "sains_u6",
+    "question_text": "Which method is commonly used to preserve fresh fruits like apples and oranges with a thin protective layer?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Waxing (Pelinziran/Pewalasan) coats fruit with edible liquid wax to prevent moisture loss and bacterial entry.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Waxing (Pewalasan)", "is_correct": 1 },
+      { "text": "Salting", "is_correct": 0 },
+      { "text": "Fermenting", "is_correct": 0 },
+      { "text": "Smoking", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u6_q9",
+    "topic_id": "sains_u6",
+    "question_text": "Match the food product to its traditional preservation method.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Traditional preservation techniques for specific food items.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Salted Fish (Ikan Masin)", "right": "Salting & Sun Drying" },
+      { "left": "Mango Pickle (Jeruk Mangga)", "right": "Pickling in Vinegar/Sugar" },
+      { "left": "Smoked Fish (Ikan Salai)", "right": "Smoking over Wood Fire" },
+      { "left": "Condensed Milk", "right": "Canning & High Sugar" }
+    ]
+  },
+  {
+    "id": "sains_u6_q10",
+    "topic_id": "sains_u6",
+    "question_text": "What is an important economic benefit of food preservation?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Preserved food lasts longer, reduces food waste, and can be exported worldwide.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Prevents food waste and enables long-distance export", "is_correct": 1 },
+      { "text": "Makes all food taste identical", "is_correct": 0 },
+      { "text": "Requires no packaging materials", "is_correct": 0 },
+      { "text": "Eliminates need for grocery stores", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u7_q1",
+    "topic_id": "sains_u7",
+    "question_text": "What is a Biodegradable waste (Bahan buangan terbiodegradasi)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Biodegradable waste can be decomposed by microorganisms into soil nutrients.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Waste decomposed naturally by microorganisms", "is_correct": 1 },
+      { "text": "Waste that remains in landfills for 1000 years", "is_correct": 0 },
+      { "text": "Toxic heavy metal waste from factories", "is_correct": 0 },
+      { "text": "Radioactive fuel rods", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u7_q2",
+    "topic_id": "sains_u7",
+    "question_text": "Which of the following items is Non-biodegradable (Tidak terbiodegradasi)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Plastic bottles, Styrofoam, and glass bottles cannot be decomposed by bacteria naturally.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Plastic water bottle", "is_correct": 1 },
+      { "text": "Banana peel", "is_correct": 0 },
+      { "text": "Paper newspaper", "is_correct": 0 },
+      { "text": "Chicken bone", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u7_q3",
+    "topic_id": "sains_u7",
+    "question_text": "What color is the recycling bin reserved for PAPER items in Malaysia?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Blue bin = Paper; Brown bin = Glass; Orange bin = Aluminum/Plastic.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Blue Bin (Tong Biru)", "is_correct": 1 },
+      { "text": "Orange Bin (Tong Jingga)", "is_correct": 0 },
+      { "text": "Brown Bin (Tong Coklat)", "is_correct": 0 },
+      { "text": "Green Bin (Tong Hijau)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u7_q4",
+    "topic_id": "sains_u7",
+    "question_text": "What color is the recycling bin reserved for GLASS bottles?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Brown recycling bin is designated for glass containers.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Brown Bin (Tong Coklat)", "is_correct": 1 },
+      { "text": "Blue Bin (Tong Biru)", "is_correct": 0 },
+      { "text": "Orange Bin (Tong Jingga)", "is_correct": 0 },
+      { "text": "Yellow Bin (Tong Kuning)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u7_q5",
+    "topic_id": "sains_u7",
+    "question_text": "What environmental hazard occurs when non-biodegradable plastic waste clogs river drainage systems?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Clogged drains prevent rainwater flow, causing flash floods (Banjir Kilat).",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Flash floods and water stagnation", "is_correct": 1 },
+      { "text": "Volcanic eruptions", "is_correct": 0 },
+      { "text": "Solar eclipses", "is_correct": 0 },
+      { "text": "Acidic soil fertilization", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u7_q6",
+    "topic_id": "sains_u7",
+    "question_text": "State whether true or false: Food waste like vegetable scraps can be converted into organic compost fertilizer.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! Microorganisms decompose organic food waste into nutrient-rich compost.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u7_q7",
+    "topic_id": "sains_u7",
+    "question_text": "How many 'R's are emphasized in modern waste management principles (Rethink, Reduce, Reuse, Recycle, Repair)?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "The 5R principle: Rethink, Reduce, Reuse, Recycle, Repair.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "5", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u7_q8",
+    "topic_id": "sains_u7",
+    "question_text": "Which waste category includes discarded batteries, electronic circuit boards, and chemical solvents?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Toxic waste / E-waste contains hazardous chemicals that require specialized disposal.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Toxic / Scheduled E-Waste", "is_correct": 1 },
+      { "text": "Organic waste", "is_correct": 0 },
+      { "text": "Biodegradable paper waste", "is_correct": 0 },
+      { "text": "Garden waste", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u7_q9",
+    "topic_id": "sains_u7",
+    "question_text": "Match the recycling bin color to its correct waste item.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Malaysian recycling bin color standards.",
+    "difficulty": "easy",
+    "matching_pairs": [
+      { "left": "Blue Bin", "right": "Paper & Cardboard" },
+      { "left": "Orange Bin", "right": "Plastics & Aluminum Cans" },
+      { "left": "Brown Bin", "right": "Glass Jars & Bottles" },
+      { "left": "Green Organic Bin", "right": "Food & Garden Waste" }
+    ]
+  },
+  {
+    "id": "sains_u7_q10",
+    "topic_id": "sains_u7",
+    "question_text": "Why is open burning of domestic rubbish prohibited by environmental laws?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Open burning releases toxic smoke, carbon monoxide, and causes air pollution (Haze/Jerebu).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Causes air pollution, haze, and toxic smoke", "is_correct": 1 },
+      { "text": "Increases soil humidity too quickly", "is_correct": 0 },
+      { "text": "Destroys underground minerals", "is_correct": 0 },
+      { "text": "Causes sea level drop", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u8_q1",
+    "topic_id": "sains_u8",
+    "question_text": "What essential property of light enables the formation of shadows and eclipses?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Light travels in straight lines and cannot pass through opaque objects.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Light travels in straight lines", "is_correct": 1 },
+      { "text": "Light bends around corners easily", "is_correct": 0 },
+      { "text": "Light travels slower in air than water", "is_correct": 0 },
+      { "text": "Light can be stored in batteries", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u8_q2",
+    "topic_id": "sains_u8",
+    "question_text": "During a Solar Eclipse (Gerhana Matahari), which heavenly body is positioned directly in the MIDDLE?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Sun -> MOON -> Earth. The Moon casts its shadow onto the Earth.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Moon (Bulan)", "is_correct": 1 },
+      { "text": "Earth (Bumi)", "is_correct": 0 },
+      { "text": "Sun (Matahari)", "is_correct": 0 },
+      { "text": "Mars", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u8_q3",
+    "topic_id": "sains_u8",
+    "question_text": "During a Lunar Eclipse (Gerhana Bulan), which heavenly body is positioned directly in the MIDDLE?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Sun -> EARTH -> Moon. The Earth blocks sunlight from reaching the Moon.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Earth (Bumi)", "is_correct": 1 },
+      { "text": "Moon (Bulan)", "is_correct": 0 },
+      { "text": "Sun (Matahari)", "is_correct": 0 },
+      { "text": "Jupiter", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u8_q4",
+    "topic_id": "sains_u8",
+    "question_text": "What is the dark central shadow zone of an eclipse called where light is completely blocked?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Umbra is the dark central shadow; Penumbra is the partial outer shadow.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Umbra", "is_correct": 1 },
+      { "text": "Penumbra", "is_correct": 0 },
+      { "text": "Corona", "is_correct": 0 },
+      { "text": "Orbit", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u8_q5",
+    "topic_id": "sains_u8",
+    "question_text": "At what Moon phase does a Lunar Eclipse ALWAYS occur?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "A Lunar Eclipse only occurs during the Full Moon phase (Bulan Purnama).",
+    "difficulty": "hard",
+    "options": [
+      { "text": "Full Moon phase (Bulan Purnama)", "is_correct": 1 },
+      { "text": "New Moon phase (Bulan Baharu)", "is_correct": 0 },
+      { "text": "Crescent Moon phase (Bulan Sabit)", "is_correct": 0 },
+      { "text": "Half Moon phase", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u8_q6",
+    "topic_id": "sains_u8",
+    "question_text": "State whether true or false: Looking directly at a Total Solar Eclipse with naked eyes can cause permanent blindness.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! Intense solar radiation during a solar eclipse can permanently damage eye retinas.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u8_q7",
+    "topic_id": "sains_u8",
+    "question_text": "Why does a Total Lunar Eclipse appear reddish (Blood Moon) rather than pitch black?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Earth's atmosphere refracts red light spectrum onto the Moon's surface during eclipse.",
+    "difficulty": "hard",
+    "options": [
+      { "text": "Red light is refracted through Earth's atmosphere onto Moon", "is_correct": 1 },
+      { "text": "The Moon catches fire in space", "is_correct": 0 },
+      { "text": "Sun turns red at night", "is_correct": 0 },
+      { "text": "Clouds reflect red ocean water", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u8_q8",
+    "topic_id": "sains_u8",
+    "question_text": "How many main types of eclipse shadow regions exist (Umbra and Penumbra)?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "There are 2 shadow regions: Umbra (full shadow) and Penumbra (partial shadow).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "2", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u8_q9",
+    "topic_id": "sains_u8",
+    "question_text": "Match the eclipse event to its middle celestial alignment body.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Alignment sequence for solar and lunar eclipses.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Solar Eclipse (Gerhana Matahari)", "right": "Moon in the middle" },
+      { "left": "Lunar Eclipse (Gerhana Bulan)", "right": "Earth in the middle" },
+      { "left": "Umbra Shadow Region", "right": "Total darkness zone" },
+      { "left": "Penumbra Shadow Region", "right": "Partial darkness zone" }
+    ]
+  },
+  {
+    "id": "sains_u8_q10",
+    "topic_id": "sains_u8",
+    "question_text": "Why does a Solar Eclipse last only a few minutes, whereas a Lunar Eclipse lasts up to several hours?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "The Moon's shadow on Earth is very small compared to Earth's massive shadow cast on the Moon.",
+    "difficulty": "hard",
+    "options": [
+      { "text": "The Moon's shadow cast on Earth is small and moves quickly", "is_correct": 1 },
+      { "text": "The Sun turns off quickly", "is_correct": 0 },
+      { "text": "Earth stops rotating during solar eclipse", "is_correct": 0 },
+      { "text": "Clouds block solar eclipses faster", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u9_q1",
+    "topic_id": "sains_u9",
+    "question_text": "Which simple machine consists of a rigid bar that rotates around a fixed pivot point called a Fulcrum?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "A Lever (Tuas) rotates around a Fulcrum (Fukum) to move a Load using Effort.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Lever (Tuas)", "is_correct": 1 },
+      { "text": "Pulley (Tali Takal)", "is_correct": 0 },
+      { "text": "Gear", "is_correct": 0 },
+      { "text": "Wedge (Baji)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u9_q2",
+    "topic_id": "sains_u9",
+    "question_text": "In a 1st Class Lever (Tuas Kelas Pertama), what item is located in the MIDDLE?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "1st Class Lever: Fulcrum in middle (e.g. Scissors, Crowbar, Seesaw).",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Fulcrum (Fukrum in middle)", "is_correct": 1 },
+      { "text": "Load (Beban in middle)", "is_correct": 0 },
+      { "text": "Effort (Daya in middle)", "is_correct": 0 },
+      { "text": "Wheel", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u9_q3",
+    "topic_id": "sains_u9",
+    "question_text": "In a 2nd Class Lever (Tuas Kelas Kedua) like a Wheelbarrow or Bottle Opener, what is in the MIDDLE?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "2nd Class Lever: Load in middle (e.g. Wheelbarrow, Nutcracker).",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Load (Beban in middle)", "is_correct": 1 },
+      { "text": "Fulcrum in middle", "is_correct": 0 },
+      { "text": "Effort in middle", "is_correct": 0 },
+      { "text": "Rope", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u9_q4",
+    "topic_id": "sains_u9",
+    "question_text": "In a 3rd Class Lever (Tuas Kelas Ketiga) like Fishing Rod or Ice Tongs, what is in the MIDDLE?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "3rd Class Lever: Effort in middle (e.g. Broom, Fishing rod, Tweezers).",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Effort (Daya in middle)", "is_correct": 1 },
+      { "text": "Fulcrum in middle", "is_correct": 0 },
+      { "text": "Load in middle", "is_correct": 0 },
+      { "text": "Axle", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u9_q5",
+    "topic_id": "sains_u9",
+    "question_text": "Which simple machine consists of a slanted surface used to lift heavy objects to higher ground with less force?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "An Inclined Plane (Satah Condong) reduces effort needed to lift loads vertically.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Inclined Plane (Satah Condong)", "is_correct": 1 },
+      { "text": "Wedge (Baji)", "is_correct": 0 },
+      { "text": "Pulley", "is_correct": 0 },
+      { "text": "Screw", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u9_q6",
+    "topic_id": "sains_u9",
+    "question_text": "State whether true or false: A bicycle is a Complex Machine made up of simple machines like gears, wheel & axle, and levers.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! A complex machine combines two or more simple machines.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u9_q7",
+    "topic_id": "sains_u9",
+    "question_text": "How many main classes of Levers exist (1st, 2nd, 3rd class)?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Levers are classified into 3 classes based on fulcrum, load, and effort positions.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "3", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "sains_u9_q8",
+    "topic_id": "sains_u9",
+    "question_text": "Which simple machine is used in a flagpole or crane to lift heavy loads vertically using a grooved wheel and rope?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "A Pulley (Takal) uses a grooved wheel and rope to lift loads.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Pulley (Takal)", "is_correct": 1 },
+      { "text": "Gear", "is_correct": 0 },
+      { "text": "Lever", "is_correct": 0 },
+      { "text": "Inclined Plane", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "sains_u9_q9",
+    "topic_id": "sains_u9",
+    "question_text": "Match the tool to its Lever Class.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Classification of tools into lever classes.",
+    "difficulty": "hard",
+    "matching_pairs": [
+      { "left": "Scissors / Crowbar", "right": "1st Class Lever (Fulcrum Middle)" },
+      { "left": "Wheelbarrow / Bottle Opener", "right": "2nd Class Lever (Load Middle)" },
+      { "left": "Broom / Fishing Rod", "right": "3rd Class Lever (Effort Middle)" },
+      { "left": "Axe / Knife Blade", "right": "Wedge (Baji)" }
+    ]
+  },
+  {
+    "id": "sains_u9_q10",
+    "topic_id": "sains_u9",
+    "question_text": "Why is machine maintenance (e.g. oiling gears and sharpening blades) important for sustainable technology?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Maintenance prolongs machine lifespan, ensures safety, and saves energy.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Prolongs machine lifespan, ensures safety & saves energy", "is_correct": 1 },
+      { "text": "Increases weight of tools", "is_correct": 0 },
+      { "text": "Makes tools radioactive", "is_correct": 0 },
+      { "text": "Changes simple machines to magnets", "is_correct": 0 }
+    ]
+  }
+]

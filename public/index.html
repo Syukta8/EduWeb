@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year 6 Sains & Matematik DLP Interactive Educational Arcade</title>
+  <meta name="description" content="Interactive Arcade Education Platform for Year 6 Sains DLP & Matematik DLP primary students with speed-based scoring, custom syllabus quizzes, and leaderboards.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- ARCADE NAVBAR -->
+  <header class="navbar">
+    <div class="brand" onclick="window.appController.showView('dashboard-view')">
+      <span class="brand-icon">🎮</span>
+      <span>YEAR 6 DLP ARCADE</span>
+    </div>
+
+    <div class="nav-actions">
+      <button class="btn-arcade btn-secondary" onclick="window.arcadeAudio.toggleMute(); this.innerText = window.arcadeAudio.muted ? '🔇 MUTED' : '🔊 SOUND';">
+        🔊 SOUND
+      </button>
+
+      <button class="btn-arcade btn-math" onclick="window.appController.openLeaderboardModal()">
+        🏆 LEADERBOARD
+      </button>
+
+      <div class="student-bar" onclick="window.appController.openAvatarModal()">
+        <span class="student-avatar" id="hdr-student-avatar">🔬</span>
+        <span class="student-name" id="hdr-student-name">DLP Arcade Student</span>
+        <span>✏️</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <!-- VIEW 1: HERO DASHBOARD -->
+    <section id="dashboard-view" class="view-section active">
+      <div class="hero-banner">
+        <h1 class="hero-title">DLP SCIENCE & MATH ARCADE ARENA</h1>
+        <p class="hero-subtitle">Interactive Speed & Accuracy Challenges for Year 6 Dual Language Programme (DLP) Primary Students!</p>
+        <div>
+          <button class="btn-arcade btn-sains" style="font-size:1.1rem; padding:0.8rem 1.8rem;" onclick="window.appController.openSubjectPortal('sains')">
+            🔬 EXPLORE SAINS DLP
+          </button>
+          <button class="btn-arcade btn-math" style="font-size:1.1rem; padding:0.8rem 1.8rem; margin-left:1rem;" onclick="window.appController.openSubjectPortal('matematik')">
+            🧮 EXPLORE MATEMATIK DLP
+          </button>
+        </div>
+      </div>
+
+      <div class="portal-grid">
+        <!-- SAINS DLP CARD -->
+        <div class="portal-card sains-card">
+          <div>
+            <div class="portal-header">
+              <span class="portal-icon">🔬</span>
+              <div>
+                <div class="portal-title">Sains DLP Portal</div>
+                <div style="color:var(--science-green); font-weight:800;">Year 6 Science Syllabus</div>
+              </div>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.5;">
+              Scientific Skills, Microorganisms, Symbiosis & Interactions, Extinct Animals, Forces, Food Preservation, Waste & Eclipses!
+            </p>
+            <div class="portal-meta">
+              <span class="meta-pill">9 Syllabus Units</span>
+              <span class="meta-pill">Interactive Diagrams</span>
+            </div>
+          </div>
+          <button class="btn-arcade btn-sains" style="width:100%; justify-content:center; margin-top:1.5rem;" onclick="window.appController.openSubjectPortal('sains')">
+            ENTER SCIENCE PORTAL ➔
+          </button>
+        </div>
+
+        <!-- MATEMATIK DLP CARD -->
+        <div class="portal-card math-card">
+          <div>
+            <div class="portal-header">
+              <span class="portal-icon">🧮</span>
+              <div>
+                <div class="portal-title">Matematik DLP Portal</div>
+                <div style="color:var(--math-yellow); font-weight:800;">Year 6 Math Syllabus</div>
+              </div>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.5;">
+              Whole Numbers, Prime Numbers, Fractions & Decimals, Financial Literacy, Time Zones, Perimeter/Area/Volume & Data Handling!
+            </p>
+            <div class="portal-meta">
+              <span class="meta-pill">7 Syllabus Units</span>
+              <span class="meta-pill">Numeric Calculations</span>
+            </div>
+          </div>
+          <button class="btn-arcade btn-math" style="width:100%; justify-content:center; margin-top:1.5rem;" onclick="window.appController.openSubjectPortal('matematik')">
+            ENTER MATH PORTAL ➔
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 2: SUBJECT PORTAL & CUSTOM QUIZ CREATOR -->
+    <section id="subject-portal-view" class="view-section">
+      <button class="btn-arcade btn-secondary" style="margin-bottom:1.5rem;" onclick="window.appController.showView('dashboard-view')">
+        ⬅ BACK TO DASHBOARD
+      </button>
+
+      <div class="setup-box">
+        <h2 id="portal-subject-title" class="setup-title">🔬 Custom Quiz Setup</h2>
+
+        <!-- UNIT SELECTION -->
+        <div class="form-group">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+            <label class="form-label">SELECT SYLLABUS UNITS TO INCLUDE:</label>
+            <div>
+              <button class="btn-arcade btn-secondary" style="font-size:0.75rem; padding:0.3rem 0.6rem;" onclick="window.appController.toggleSelectAllTopics(true)">SELECT ALL</button>
+              <button class="btn-arcade btn-secondary" style="font-size:0.75rem; padding:0.3rem 0.6rem;" onclick="window.appController.toggleSelectAllTopics(false)">CLEAR ALL</button>
+            </div>
+          </div>
+          <div class="topic-list" id="topic-checkbox-list">
+            <!-- Topics loaded dynamically -->
+          </div>
+        </div>
+
+        <!-- MODE SELECTOR -->
+        <div class="form-group">
+          <label class="form-label">CHOOSE QUIZ PLAY MODE:</label>
+          <div class="mode-selector">
+            <div id="mode-btn-practice" class="mode-btn active" onclick="window.appController.selectMode('practice')">
+              <div style="font-size:1.5rem; margin-bottom:0.3rem;">💡 PRACTICE MODE</div>
+              <div style="font-size:0.8rem;">Instant explanations & mascot hints</div>
+            </div>
+            <div id="mode-btn-challenge" class="mode-btn" onclick="window.appController.selectMode('challenge')">
+              <div style="font-size:1.5rem; margin-bottom:0.3rem;">⚡ CHALLENGE SPEEDRUN</div>
+              <div style="font-size:0.8rem;">Strict timers, streak multipliers & leaderboard</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SETTINGS: Q COUNT & TIMER -->
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem;">
+          <div class="form-group">
+            <label class="form-label">NUMBER OF QUESTIONS:</label>
+            <select id="quiz-qcount-val" class="option-btn" style="width:100%;">
+              <option value="5">5 Questions (Quick Match)</option>
+              <option value="10" selected>10 Questions (Standard Quiz)</option>
+              <option value="15">15 Questions (Deep Drill)</option>
+              <option value="20">20 Questions (Full Unit Test)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">TIMER PER QUESTION:</label>
+            <select id="quiz-timer-val" class="option-btn" style="width:100%;">
+              <option value="30">30 Seconds (Relaxed)</option>
+              <option value="20" selected>20 Seconds (Standard)</option>
+              <option value="15">15 Seconds (Arcade Speedrun)</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn-arcade btn-sains" style="width:100%; justify-content:center; font-size:1.2rem; padding:1rem;" onclick="window.appController.launchQuiz()">
+          🚀 LAUNCH DLP QUIZ ARENA ➔
+        </button>
+      </div>
+    </section>
+
+    <!-- VIEW 3: QUIZ ARENA VIEW -->
+    <section id="quiz-arena-view" class="view-section">
+      <div id="quiz-arena">
+        <!-- Interactive questions rendered dynamically by quiz_engine.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL 1: AVATAR SELECTOR MODAL -->
+  <div id="avatar-modal" class="modal-overlay">
+    <div class="modal-box">
+      <h2 style="font-family:var(--font-pixel); color:var(--math-yellow); margin-bottom:1rem;">CHOOSE YOUR ARCADE AVATAR</h2>
+      
+      <div class="form-group">
+        <label class="form-label">YOUR STUDENT NAME:</label>
+        <input type="text" id="student-name-input" class="numeric-input" style="width:100%; text-align:left; font-size:1.1rem; font-family:var(--font-body);" value="DLP Arcade Student" placeholder="Enter student name..." />
+      </div>
+
+      <label class="form-label">SELECT AVATAR:</label>
+      <div class="avatar-grid" id="avatar-grid-list">
+        <!-- Avatars rendered dynamically -->
+      </div>
+
+      <div style="text-align:right; margin-top:1.5rem;">
+        <button class="btn-arcade btn-secondary" onclick="window.appController.closeModal('avatar-modal')">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: LEADERBOARD MODAL -->
+  <div id="leaderboard-modal" class="modal-overlay">
+    <div class="modal-box">
+      <h2 style="font-family:var(--font-pixel); color:var(--math-yellow); text-align:center; margin-bottom:1.5rem;">🏆 HIGH-SCORE LEADERBOARD</h2>
+      <div id="leaderboard-list-body">
+        <!-- Leaderboard items rendered dynamically -->
+      </div>
+      <div style="text-align:center; margin-top:1.5rem;">
+        <button class="btn-arcade btn-secondary" onclick="window.appController.closeModal('leaderboard-modal')">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: SCORECARD MODAL -->
+  <div id="scorecard-modal" class="modal-overlay">
+    <div class="modal-box" id="scorecard-content">
+      <!-- Scorecard rendered dynamically -->
+    </div>
+  </div>
+
+  <!-- JS MODULES -->
+  <script src="/js/audio.js"></script>
+  <script src="/js/quiz_engine.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

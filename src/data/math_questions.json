@@ -1,0 +1,915 @@
+[
+  {
+    "id": "math_u1_q1",
+    "topic_id": "math_u1",
+    "question_text": "Which of the following numbers is a Prime Number (Nombor Perdana)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "37 is a prime number because its only factors are 1 and 37.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "37", "is_correct": 1 },
+      { "text": "39", "is_correct": 0 },
+      { "text": "45", "is_correct": 0 },
+      { "text": "51", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u1_q2",
+    "topic_id": "math_u1",
+    "question_text": "Convert 1/4 million into a standard whole number. (Type numerical answer).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "1/4 × 1,000,000 = 250,000.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "250000", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u1_q3",
+    "topic_id": "math_u1",
+    "question_text": "Convert 3.5 million into a standard whole number. (Type numerical answer).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "3.5 × 1,000,000 = 3,500,000.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "3500000", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u1_q4",
+    "topic_id": "math_u1",
+    "question_text": "Calculate: 1.25 million + 450,000 = ?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "1,250,000 + 450,000 = 1,700,000.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "1700000", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u1_q5",
+    "topic_id": "math_u1",
+    "question_text": "Express 750,000 as a fraction of a million in simplest form.",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "750,000 / 1,000,000 = 3/4 million.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "3/4 million", "is_correct": 1 },
+      { "text": "1/2 million", "is_correct": 0 },
+      { "text": "4/5 million", "is_correct": 0 },
+      { "text": "7/10 million", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u1_q6",
+    "topic_id": "math_u1",
+    "question_text": "State whether true or false: 1 is considered a Prime Number.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "False! 1 is NOT a prime number because a prime number must have EXACTLY two distinct positive factors (1 and itself).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 0 },
+      { "text": "False", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u1_q7",
+    "topic_id": "math_u1",
+    "question_text": "How many prime numbers exist between 1 and 20? (2, 3, 5, 7, 11, 13, 17, 19).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "There are 8 prime numbers: 2, 3, 5, 7, 11, 13, 17, 19.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "8", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u1_q8",
+    "topic_id": "math_u1",
+    "question_text": "Solve: (2.4 million ÷ 6) × 5 = ?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "2,400,000 ÷ 6 = 400,000. 400,000 × 5 = 2,000,000.",
+    "difficulty": "hard",
+    "options": [
+      { "text": "2000000", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u1_q9",
+    "topic_id": "math_u1",
+    "question_text": "Match the fraction of a million to its whole number equivalent.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Converting million fractions to whole numbers.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "1/2 million", "right": "500,000" },
+      { "left": "1/5 million", "right": "200,000" },
+      { "left": "3/8 million", "right": "375,000" },
+      { "left": "7/10 million", "right": "700,000" }
+    ]
+  },
+  {
+    "id": "math_u1_q10",
+    "topic_id": "math_u1",
+    "question_text": "Which of the following operations correctly represents 4/5 million in decimals?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "4/5 = 0.8. Thus, 4/5 million = 0.8 million = 800,000.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "0.8 million", "is_correct": 1 },
+      { "text": "0.08 million", "is_correct": 0 },
+      { "text": "0.45 million", "is_correct": 0 },
+      { "text": "4.5 million", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u2_q1",
+    "topic_id": "math_u2",
+    "question_text": "Calculate: 3/5 × 250 = ?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "(3 × 250) / 5 = 750 / 5 = 150.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "150", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u2_q2",
+    "topic_id": "math_u2",
+    "question_text": "Multiply fraction by fraction: 2/3 × 3/4 = ?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "(2 × 3) / (3 × 4) = 6/12 = 1/2.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "1/2", "is_correct": 1 },
+      { "text": "5/7", "is_correct": 0 },
+      { "text": "3/8", "is_correct": 0 },
+      { "text": "2/7", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u2_q3",
+    "topic_id": "math_u2",
+    "question_text": "Convert 0.85 into a percentage.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "0.85 × 100% = 85%.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "85", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u2_q4",
+    "topic_id": "math_u2",
+    "question_text": "Find 15% of RM 400. (Type numerical answer).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "(15 / 100) × 400 = 15 × 4 = 60.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "60", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u2_q5",
+    "topic_id": "math_u2",
+    "question_text": "A school library had 800 books. During book fair, the number of books increased by 25%. How many total books are there now?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "25% of 800 = 200. Total = 800 + 200 = 1000.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "1000", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u2_q6",
+    "topic_id": "math_u2",
+    "question_text": "State whether true or false: 3/4 is equivalent to 75%.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! 3/4 = 0.75 = 75%.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u2_q7",
+    "topic_id": "math_u2",
+    "question_text": "Convert 1 1/2 to a percentage.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "1 1/2 = 1.5. 1.5 × 100% = 150%.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "150", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u2_q8",
+    "topic_id": "math_u2",
+    "question_text": "A price of an item decreased from RM 50 to RM 40. Calculate the percentage decrease.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Decrease = RM 10. Percentage decrease = (10 / 50) × 100% = 20%.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "20", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u2_q9",
+    "topic_id": "math_u2",
+    "question_text": "Match the fraction to its percentage equivalent.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Converting fractions to percentage values.",
+    "difficulty": "easy",
+    "matching_pairs": [
+      { "left": "1/4", "right": "25%" },
+      { "left": "1/5", "right": "20%" },
+      { "left": "3/5", "right": "60%" },
+      { "left": "7/10", "right": "70%" }
+    ]
+  },
+  {
+    "id": "math_u2_q10",
+    "topic_id": "math_u2",
+    "question_text": "Solve: 4.5 ÷ 0.5 = ?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "4.5 ÷ 0.5 = 45 ÷ 5 = 9.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "9", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u3_q1",
+    "topic_id": "math_u3",
+    "question_text": "A dealer bought a laptop for RM 1,200 and sold it for RM 1,500. Calculate the Profit (Untung).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Profit = Selling Price - Cost Price = RM 1,500 - RM 1,200 = RM 300.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "300", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u3_q2",
+    "topic_id": "math_u3",
+    "question_text": "A jacket original price was RM 200. During sale, a 15% Discount was given. Calculate the discount amount in RM.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Discount = 15% × RM 200 = (15/100) × 200 = RM 30.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "30", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u3_q3",
+    "topic_id": "math_u3",
+    "question_text": "What is an Asset (Aset)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "An asset is anything valuable owned (e.g. cash, savings, house, land).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Wealth or properties owned by a person", "is_correct": 1 },
+      { "text": "A loan or debt owed to a bank", "is_correct": 0 },
+      { "text": "Monthly electricity tax bill", "is_correct": 0 },
+      { "text": "A speeding fine ticket", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u3_q4",
+    "topic_id": "math_u3",
+    "question_text": "Which of the following is a Liability (Liabiliti)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "A housing loan / credit card debt is a liability because it is money owed.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Housing loan debt (Pinjaman perumahan)", "is_correct": 1 },
+      { "text": "Fixed deposit bank savings", "is_correct": 0 },
+      { "text": "Gold jewelry owned", "is_correct": 0 },
+      { "text": "Cash in wallet", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u3_q5",
+    "topic_id": "math_u3",
+    "question_text": "A shopkeeper bought a bicycle for RM 500 and sold it for RM 420. Did he make a profit or a loss, and by how much?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Cost Price > Selling Price, so Loss = RM 500 - RM 420 = RM 80 loss.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "Loss of RM 80", "is_correct": 1 },
+      { "text": "Profit of RM 80", "is_correct": 0 },
+      { "text": "Profit of RM 920", "is_correct": 0 },
+      { "text": "No profit no loss", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u3_q6",
+    "topic_id": "math_u3",
+    "question_text": "State whether true or false: Interest (Faedah) earned on savings in a bank increases total savings.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! Interest paid by the bank is added to the principal savings.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u3_q7",
+    "topic_id": "math_u3",
+    "question_text": "Calculate the Selling Price of a shirt if Cost Price = RM 45 and Profit desired = RM 15. (Type numerical answer).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Selling Price = Cost Price + Profit = 45 + 15 = RM 60.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "60", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u3_q8",
+    "topic_id": "math_u3",
+    "question_text": "What is a Rebate (Rebat)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "A rebate is a partial refund or deduction given on a purchase.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "A refund or deduction from total payment", "is_correct": 1 },
+      { "text": "A penalty for late payment", "is_correct": 0 },
+      { "text": "An extra government tax added to bill", "is_correct": 0 },
+      { "text": "Interest charged on credit card", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u3_q9",
+    "topic_id": "math_u3",
+    "question_text": "Match the financial literacy term to its correct definition.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Financial terms in Year 6 DLP Math.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Profit (Untung)", "right": "Selling Price - Cost Price" },
+      { "left": "Loss (Rugi)", "right": "Cost Price - Selling Price" },
+      { "left": "Assets (Aset)", "right": "Wealth & owned properties" },
+      { "left": "Liabilities (Liabiliti)", "right": "Debts & loans owed" }
+    ]
+  },
+  {
+    "id": "math_u3_q10",
+    "topic_id": "math_u3",
+    "question_text": "If a camera costs RM 800 and 6% SST tax is added, what is the total tax amount in RM?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Tax = 6% × 800 = (6/100) × 800 = RM 48.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "48", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u4_q1",
+    "topic_id": "math_u4",
+    "question_text": "Convert 15:45 in 24-hour system to 12-hour system.",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "15:45 - 12:00 = 3:45 p.m.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "3:45 p.m.", "is_correct": 1 },
+      { "text": "3:45 a.m.", "is_correct": 0 },
+      { "text": "5:45 p.m.", "is_correct": 0 },
+      { "text": "15:45 p.m.", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u4_q2",
+    "topic_id": "math_u4",
+    "question_text": "If it is 08:00 in Kuala Lumpur (UTC+8), what time is it in Tokyo (UTC+9)? Express in 24-hour format.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Tokyo is 1 hour ahead of Kuala Lumpur. 08:00 + 1 hour = 09:00.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "09:00", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u4_q3",
+    "topic_id": "math_u4",
+    "question_text": "Kuala Lumpur is UTC+8 and London is UTC+0. If a live football match starts in London at 15:00, what time is it in Kuala Lumpur?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Kuala Lumpur is 8 hours ahead of London. 15:00 + 8 hours = 23:00.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "23:00", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u4_q4",
+    "topic_id": "math_u4",
+    "question_text": "Calculate the duration between 09:15 and 14:45 on the same day in hours.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "14:45 - 09:15 = 5 hours 30 minutes = 5.5 hours.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "5.5", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u4_q5",
+    "topic_id": "math_u4",
+    "question_text": "How many decades (dekad) are there in 1 century (abad)?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "1 century = 100 years = 10 decades.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "10", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u4_q6",
+    "topic_id": "math_u4",
+    "question_text": "State whether true or false: 00:00 in 24-hour clock system represents midnight.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! 00:00 (or Jam 0000) represents 12:00 a.m. (midnight).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u4_q7",
+    "topic_id": "math_u4",
+    "question_text": "A flight left Kuala Lumpur at 22:30 and arrived in Sydney (which is 3 hours ahead) after an 8-hour flight. What local Sydney time did it arrive?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "KL flight time: 22:30 + 8 hours = 06:30 next day KL time. Sydney is +3 hours ahead -> 06:30 + 3 hours = 09:30.",
+    "difficulty": "hard",
+    "options": [
+      { "text": "09:30 next day", "is_correct": 1 },
+      { "text": "06:30 next day", "is_correct": 0 },
+      { "text": "11:30 next day", "is_correct": 0 },
+      { "text": "03:30 next day", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u4_q8",
+    "topic_id": "math_u4",
+    "question_text": "Convert 36 months into years.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "36 / 12 = 3 years.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "3", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u4_q9",
+    "topic_id": "math_u4",
+    "question_text": "Match the city to its standard UTC time zone offset.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "World time zones relative to UTC.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Kuala Lumpur / Singapore", "right": "UTC+8" },
+      { "left": "London (GMT)", "right": "UTC+0" },
+      { "left": "Tokyo", "right": "UTC+9" },
+      { "left": "New York (EST)", "right": "UTC-5" }
+    ]
+  },
+  {
+    "id": "math_u4_q10",
+    "topic_id": "math_u4",
+    "question_text": "How many days are there in a Leap Year (Tahun Lompat)?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "A leap year has 366 days (February has 29 days).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "366", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u5_q1",
+    "topic_id": "math_u5",
+    "question_text": "Calculate the perimeter of a rectangle with length 12 cm and width 8 cm in cm.",
+    "question_type": "numeric",
+    "diagram_svg": "<svg viewBox=\"0 0 160 100\" class=\"diagram-svg\"><rect x=\"20\" y=\"20\" width=\"120\" height=\"60\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"80\" y=\"15\" font-size=\"12\" fill=\"#1e40af\" text-anchor=\"middle\">12 cm</text><text x=\"145\" y=\"55\" font-size=\"12\" fill=\"#1e40af\">8 cm</text></svg>",
+    "explanation": "Perimeter = 2 × (12 + 8) = 2 × 20 = 40 cm.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "40", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u5_q2",
+    "topic_id": "math_u5",
+    "question_text": "Calculate the Area of a right-angled triangle with base 10 cm and height 6 cm in cm².",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Area = 1/2 × Base × Height = 1/2 × 10 × 6 = 30 cm².",
+    "difficulty": "medium",
+    "options": [
+      { "text": "30", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u5_q3",
+    "topic_id": "math_u5",
+    "question_text": "Calculate the Volume of a cuboid with length 5 cm, width 4 cm, and height 10 cm in cm³.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Volume = Length × Width × Height = 5 × 4 × 10 = 200 cm³.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "200", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u5_q4",
+    "topic_id": "math_u5",
+    "question_text": "Convert 2.5 kg into grams.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "2.5 × 1000 = 2500 g.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "2500", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u5_q5",
+    "topic_id": "math_u5",
+    "question_text": "Convert 3500 ml into liters.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "3500 / 1000 = 3.5 liters.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "3.5", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u5_q6",
+    "topic_id": "math_u5",
+    "question_text": "State whether true or false: The interior angles of any triangle always add up to 180 degrees.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! The sum of interior angles in any triangle is 180°.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u5_q7",
+    "topic_id": "math_u5",
+    "question_text": "A cube has a side length of 4 cm. What is its total surface area (Jumlah luas permukaan) in cm²?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "A cube has 6 faces. Area of 1 face = 4 × 4 = 16 cm². Total surface area = 6 × 16 = 96 cm².",
+    "difficulty": "hard",
+    "options": [
+      { "text": "96", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u5_q8",
+    "topic_id": "math_u5",
+    "question_text": "What is the name of a 3D geometric shape with 1 curved surface, 1 flat circular base, and 1 apex vertex?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "A Cone (Kon) has 1 circular base, 1 apex, and 1 curved surface.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Cone (Kon)", "is_correct": 1 },
+      { "text": "Cylinder (Silinder)", "is_correct": 0 },
+      { "text": "Sphere (Sfera)", "is_correct": 0 },
+      { "text": "Pyramid (Piramid)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u5_q9",
+    "topic_id": "math_u5",
+    "question_text": "Match the 3D solid shape to its total number of faces.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Properties of 3D geometric shapes.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Cube / Cuboid", "right": "6 Flat Faces" },
+      { "left": "Square Pyramid", "right": "5 Faces (1 base + 4 triangular)" },
+      { "left": "Cylinder", "right": "3 Surfaces (2 circular + 1 curved)" },
+      { "left": "Triangular Prism", "right": "5 Faces (2 triangular + 3 rectangular)" }
+    ]
+  },
+  {
+    "id": "math_u5_q10",
+    "topic_id": "math_u5",
+    "question_text": "Calculate the area of a square with perimeter 24 cm in cm².",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Side length = 24 / 4 = 6 cm. Area = 6 × 6 = 36 cm².",
+    "difficulty": "medium",
+    "options": [
+      { "text": "36", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u6_q1",
+    "topic_id": "math_u6",
+    "question_text": "On a Cartesian plane, what are the coordinates of the Origin point (Asalan)?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "The origin point where x-axis and y-axis intersect is (0, 0).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "(0, 0)", "is_correct": 1 },
+      { "text": "(1, 1)", "is_correct": 0 },
+      { "text": "(0, 1)", "is_correct": 0 },
+      { "text": "(10, 10)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u6_q2",
+    "topic_id": "math_u6",
+    "question_text": "Point A is at (3, 7). What is the x-coordinate distance from the y-axis?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "The x-coordinate is 3.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "3", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u6_q3",
+    "topic_id": "math_u6",
+    "question_text": "A fruit basket has 6 apples and 18 oranges. Simplify the ratio of apples to oranges (Nisbah epal kepada oren).",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "6 : 18 divided by 6 = 1 : 3.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "1 : 3", "is_correct": 1 },
+      { "text": "1 : 2", "is_correct": 0 },
+      { "text": "2 : 5", "is_correct": 0 },
+      { "text": "3 : 1", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u6_q4",
+    "topic_id": "math_u6",
+    "question_text": "If 4 exercise books cost RM 12, how much do 10 exercise books cost in RM? (Type numerical answer).",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Cost of 1 book = RM 12 / 4 = RM 3. Cost of 10 books = 10 × 3 = RM 30.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "30", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u6_q5",
+    "topic_id": "math_u6",
+    "question_text": "Point P is at (2, 4) and Point Q is at (8, 4). Calculate the horizontal distance between P and Q.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Horizontal distance = 8 - 2 = 6 units.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "6", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u6_q6",
+    "topic_id": "math_u6",
+    "question_text": "State whether true or false: Coordinates are always written in the order (y, x).",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "False! Coordinates are ALWAYS written as (x, y) where x comes first.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 0 },
+      { "text": "False", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u6_q7",
+    "topic_id": "math_u6",
+    "question_text": "The ratio of red pens to blue pens is 2 : 5. If there are 10 red pens, how many blue pens are there?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "2 parts = 10, so 1 part = 5. Blue pens = 5 parts × 5 = 25.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "25", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u6_q8",
+    "topic_id": "math_u6",
+    "question_text": "A car uses 5 liters of petrol to travel 60 km. How many kilometers can it travel on 15 liters of petrol?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Distance per liter = 60 / 5 = 12 km/l. Total distance = 15 × 12 = 180 km.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "180", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u6_q9",
+    "topic_id": "math_u6",
+    "question_text": "Match the ratio to its simplified form.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Simplifying mathematical ratios.",
+    "difficulty": "easy",
+    "matching_pairs": [
+      { "left": "4 : 12", "right": "1 : 3" },
+      { "left": "10 : 25", "right": "2 : 5" },
+      { "left": "15 : 20", "right": "3 : 4" },
+      { "left": "14 : 21", "right": "2 : 3" }
+    ]
+  },
+  {
+    "id": "math_u6_q10",
+    "topic_id": "math_u6",
+    "question_text": "Point K is at (5, 2). If Point K moves 4 units upwards, what is its new y-coordinate?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "New y-coordinate = 2 + 4 = 6. New coordinate = (5, 6).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "6", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u7_q1",
+    "topic_id": "math_u7",
+    "question_text": "Find the Mean (Min) of the following set of test scores: 70, 80, 85, 90, 100.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Sum = 425. Mean = 425 / 5 = 85.",
+    "difficulty": "medium",
+    "options": [
+      { "text": "85", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u7_q2",
+    "topic_id": "math_u7",
+    "question_text": "Find the Mode (Mod) of this data set: 4, 6, 7, 7, 7, 9, 12.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Mode is the number with highest frequency = 7.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "7", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u7_q3",
+    "topic_id": "math_u7",
+    "question_text": "Find the Median (Penengah) of this arranged data set: 12, 15, 18, 22, 30.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "The middle value of 5 ordered numbers is the 3rd number = 18.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "18", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u7_q4",
+    "topic_id": "math_u7",
+    "question_text": "Find the Range (Julat) of the data set: 15, 23, 40, 12, 85.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Range = Maximum value - Minimum value = 85 - 12 = 73.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "73", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u7_q5",
+    "topic_id": "math_u7",
+    "question_text": "What is the Likelihood (Kebolehjadian) that the Sun will rise in the East tomorrow morning?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "The sun rising in the east is a natural law and is Certain (Pasti).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Certain (Pasti)", "is_correct": 1 },
+      { "text": "Impossible (Mustahil)", "is_correct": 0 },
+      { "text": "Equal chance (Sama kemungkinan)", "is_correct": 0 },
+      { "text": "Unlikely (Kecil kemungkinan)", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u7_q6",
+    "topic_id": "math_u7",
+    "question_text": "State whether true or false: Tossing a fair coin landing on 'Heads' has an Equal Chance (Sama kemungkinan) likelihood.",
+    "question_type": "true_false",
+    "diagram_svg": null,
+    "explanation": "True! A fair coin has 50% heads and 50% tails (Equal chance).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "True", "is_correct": 1 },
+      { "text": "False", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u7_q7",
+    "topic_id": "math_u7",
+    "question_text": "What is the likelihood of a fish living naturally on dry land without water?",
+    "question_type": "mcq",
+    "diagram_svg": null,
+    "explanation": "Fish require water to breathe; living naturally on dry land is Impossible (Mustahil).",
+    "difficulty": "easy",
+    "options": [
+      { "text": "Impossible (Mustahil)", "is_correct": 1 },
+      { "text": "Certain (Pasti)", "is_correct": 0 },
+      { "text": "Likely (Besar kemungkinan)", "is_correct": 0 },
+      { "text": "Equal chance", "is_correct": 0 }
+    ]
+  },
+  {
+    "id": "math_u7_q8",
+    "topic_id": "math_u7",
+    "question_text": "In a class bar chart, 5 pupils chose Blue, 12 chose Red, 8 chose Yellow, and 5 chose Green. How many total pupils were surveyed?",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "Total pupils = 5 + 12 + 8 + 5 = 30.",
+    "difficulty": "easy",
+    "options": [
+      { "text": "30", "is_correct": 1 }
+    ]
+  },
+  {
+    "id": "math_u7_q9",
+    "topic_id": "math_u7",
+    "question_text": "Match the statistical term to its correct formula or definition.",
+    "question_type": "drag_drop",
+    "diagram_svg": null,
+    "explanation": "Basic statistics terms in Year 6 DLP Math.",
+    "difficulty": "medium",
+    "matching_pairs": [
+      { "left": "Mean (Min)", "right": "Total sum ÷ Total number of data" },
+      { "left": "Median (Penengah)", "right": "Middle value in ordered data" },
+      { "left": "Mode (Mod)", "right": "Value with highest frequency" },
+      { "left": "Range (Julat)", "right": "Maximum value - Minimum value" }
+    ]
+  },
+  {
+    "id": "math_u7_q10",
+    "topic_id": "math_u7",
+    "question_text": "Find the Median of the even number dataset: 10, 20, 30, 40.",
+    "question_type": "numeric",
+    "diagram_svg": null,
+    "explanation": "For even number of data points, Median = average of 2 middle numbers = (20 + 30) / 2 = 25.",
+    "difficulty": "hard",
+    "options": [
+      { "text": "25", "is_correct": 1 }
+    ]
+  }
+]
