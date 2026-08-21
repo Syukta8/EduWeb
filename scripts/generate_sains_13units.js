@@ -1,0 +1,1956 @@
+/**
+ * @file generate_sains_13units.js
+ * Generates the complete 130-question question bank for Year 6 Sains DLP (KSSR Semakan).
+ * Units 1 to 13 matching Buku Teks Sains Tahun 6 (DLP).
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const questions = [];
+
+// ==========================================
+// UNIT 1: SCIENTIFIC SKILLS (Kemahiran Saintifik)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u1_q1",
+    topic_id: "sains_u1",
+    question_text: "In an experiment testing how temperature affects the rate of dissolving sugar, what is the Manipulated Variable (Pemboleh Ubah Dimanipulasikan)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The manipulated variable is what we intentionally change in an experiment (Temperature of water).",
+    difficulty: "easy",
+    options: [
+      { text: "Temperature of water (°C)", is_correct: 1 },
+      { text: "Time taken for sugar to dissolve", is_correct: 0 },
+      { text: "Amount of sugar used", is_correct: 0 },
+      { text: "Size of beaker", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u1_q2",
+    topic_id: "sains_u1",
+    question_text: "A student states: 'As the surface roughness increases, the friction force produced increases.' What science process skill is this?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Formulating a hypothesis is making a general testable statement linking manipulated and responding variables.",
+    difficulty: "medium",
+    options: [
+      { text: "Formulating a Hypothesis", is_correct: 1 },
+      { text: "Making an Inference", is_correct: 0 },
+      { text: "Predicting", is_correct: 0 },
+      { text: "Defining Operationally", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u1_q3",
+    topic_id: "sains_u1",
+    question_text: "Plants in Pot A received 100ml water daily, while Pot B received 10ml water daily. After 2 weeks, Pot A grew 15cm taller than Pot B. What is the Responding Variable?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The responding variable is the measured outcome at the end of the experiment (Height of plant).",
+    difficulty: "easy",
+    options: [
+      { text: "Height of plant (cm)", is_correct: 1 },
+      { text: "Amount of water given daily", is_correct: 0 },
+      { text: "Type of soil used", is_correct: 0 },
+      { text: "Number of leaves", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u1_q4",
+    topic_id: "sains_u1",
+    question_text: "When reading liquid volume in a measuring cylinder, how should your eye line of sight be aligned to prevent parallax error?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Line of sight must be perpendicular (level) with the lowest point of the liquid meniscus.",
+    difficulty: "medium",
+    options: [
+      { text: "Level with the bottom of the meniscus", is_correct: 1 },
+      { text: "Looking down from top of cylinder", is_correct: 0 },
+      { text: "Level with the top edge of meniscus", is_correct: 0 },
+      { text: "Looking upward at a 45 degree angle", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u1_q5",
+    topic_id: "sains_u1",
+    question_text: "Which of the following describes an Operational Definition (Mendefinisi Secara Operasi) for the rate of rusting of iron nails?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "An operational definition explains a concept based on observable and measurable actions during the experiment.",
+    difficulty: "hard",
+    options: [
+      { text: "The number of brown spots formed on the nail surface after 3 days", is_correct: 1 },
+      { text: "Rust is the oxidation of iron in presence of water and oxygen", is_correct: 0 },
+      { text: "Iron nails rust faster in saltwater than tap water", is_correct: 0 },
+      { text: "The chemical formula of rust is hydrated iron oxide", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u1_q6",
+    topic_id: "sains_u1",
+    question_text: "Which manipulative skill is shown when a student uses a test tube holder and safety goggles during heating?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Handling science apparatus and substances correctly and safely is a key manipulative skill.",
+    difficulty: "easy",
+    options: [
+      { text: "Handling apparatus and chemicals safely", is_correct: 1 },
+      { text: "Cleaning apparatus properly", is_correct: 0 },
+      { text: "Sketching specimens accurately", is_correct: 0 },
+      { text: "Storing apparatus correctly", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u1_q7",
+    topic_id: "sains_u1",
+    question_text: "An inference must always be made before carrying out an experiment.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. An inference is an early explanation for an observation, which can be made whenever an observation occurs.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u1_q8",
+    topic_id: "sains_u1",
+    question_text: "Constant variables (pemboleh ubah dimalarkan) must be kept the same throughout the entire test to ensure a fair test.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Keeping constant variables identical ensures that only the manipulated variable influences the responding variable.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u1_q9",
+    topic_id: "sains_u1",
+    question_text: "A beaker contained 120 ml of water. After adding 4 identical marbles, the water level rose to 160 ml. What is the volume of ONE marble in ml?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "Total volume displaced = 160 - 120 = 40 ml. Volume of 1 marble = 40 / 4 = 10 ml.",
+    difficulty: "medium",
+    options: [
+      { text: "10", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u1_q10",
+    topic_id: "sains_u1",
+    question_text: "Match the Science Process Skill with its correct operational description.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Skills: Observing uses senses; Inferring provides early explanation; Predicting forecasts future events.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Observing", right: "Using sight, hearing, touch, taste or smell to gather data" },
+      { left: "Inferring", right: "Making a logical early conclusion to explain an observation" },
+      { left: "Predicting", right: "Forecasting an event based on prior experience or reliable data" },
+      { left: "Classifying", right: "Grouping objects based on common characteristics" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 2: HUMANS (Manusia - Reproduction & Nervous System)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u2_q1",
+    topic_id: "sains_u2",
+    question_text: "What is the main function of the human reproductive system?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The reproductive system allows humans to produce offspring and ensure the survival and continuation of the human species.",
+    difficulty: "easy",
+    options: [
+      { text: "To produce offspring to prevent extinction", is_correct: 1 },
+      { text: "To pump blood and oxygen to all body parts", is_correct: 0 },
+      { text: "To digest food and absorb nutrients", is_correct: 0 },
+      { text: "To filter waste products from the blood", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u2_q2",
+    topic_id: "sains_u2",
+    question_text: "Which organ in the male reproductive system produces sperms and male sex hormones?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Testis produces sperms (male gametes) and sex hormones in males.",
+    difficulty: "easy",
+    options: [
+      { text: "Testis", is_correct: 1 },
+      { text: "Penis", is_correct: 0 },
+      { text: "Sperm duct", is_correct: 0 },
+      { text: "Urethra", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u2_q3",
+    topic_id: "sains_u2",
+    question_text: "Where does fertilization (the fusion of a sperm and an ovum) usually take place in the female reproductive system?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Fertilization occurs in the Fallopian tube (oviduct) when a sperm fuses with an ovum.",
+    difficulty: "medium",
+    options: [
+      { text: "Fallopian tube (Oviduct)", is_correct: 1 },
+      { text: "Uterus (Womb)", is_correct: 0 },
+      { text: "Ovary", is_correct: 0 },
+      { text: "Vagina", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u2_q4",
+    topic_id: "sains_u2",
+    question_text: "Which organ in the human body acts as the central control coordinator of the central nervous system?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The brain coordinates all bodily functions, thoughts, voluntary actions, and involuntary actions.",
+    difficulty: "easy",
+    options: [
+      { text: "Brain", is_correct: 1 },
+      { text: "Spinal cord", is_correct: 0 },
+      { text: "Heart", is_correct: 0 },
+      { text: "Lungs", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u2_q5",
+    topic_id: "sains_u2",
+    question_text: "What are the two main components of the human Central Nervous System (Sistem Saraf Pusat)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The central nervous system consists of the Brain (otak) and the Spinal Cord (saraf tunjang).",
+    difficulty: "medium",
+    options: [
+      { text: "Brain and Spinal Cord", is_correct: 1 },
+      { text: "Brain and Peripheral Nerves", is_correct: 0 },
+      { text: "Spinal Cord and Sensory Organs", is_correct: 0 },
+      { text: "Heart and Blood Vessels", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u2_q6",
+    topic_id: "sains_u2",
+    question_text: "Which of the following actions is an example of an Involuntary Action (Tindakan Luar Kawal) controlled automatically by the nervous system?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Heartbeat, breathing, and peristalsis happen automatically without conscious thought.",
+    difficulty: "medium",
+    options: [
+      { text: "Heartbeat pumping blood continuously", is_correct: 1 },
+      { text: "Writing notes with a pencil", is_correct: 0 },
+      { text: "Kicking a football during a match", is_correct: 0 },
+      { text: "Reading a textbook aloud", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u2_q7",
+    topic_id: "sains_u2",
+    question_text: "The peripheral nervous system connects the central nervous system to all sensory organs and muscles in the body.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Peripheral nerves transmit signals between the central nervous system (brain & spinal cord) and all other body parts.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u2_q8",
+    topic_id: "sains_u2",
+    question_text: "The embryo implants and develops into a fetus inside the ovary.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. The embryo implants and grows inside the Uterus (Womb), not the ovary.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u2_q9",
+    topic_id: "sains_u2",
+    question_text: "Normal human pregnancy (gestation period) in the uterus lasts approximately how many months?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "Human pregnancy typically lasts about 9 months (approx 38-40 weeks).",
+    difficulty: "easy",
+    options: [
+      { text: "9", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u2_q10",
+    topic_id: "sains_u2",
+    question_text: "Match each human organ with its primary function.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Testis produces sperm; Ovary produces ovum; Spinal cord transmits reflex signals; Uterus shelters fetus.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Testis", right: "Produces male gametes (sperms)" },
+      { left: "Ovary", right: "Produces female gametes (ovum)" },
+      { left: "Uterus (Womb)", right: "Place where embryo implants and develops" },
+      { left: "Spinal Cord", right: "Carries nerve impulses and controls reflex actions" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 3: MICROORGANISMS (Mikroorganisma)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u3_q1",
+    topic_id: "sains_u3",
+    question_text: "Which of the following is the smallest type of microorganism that can only multiply inside living host cells?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Viruses are the smallest microorganisms and can only reproduce inside living cells.",
+    difficulty: "easy",
+    options: [
+      { text: "Virus", is_correct: 1 },
+      { text: "Bacteria", is_correct: 0 },
+      { text: "Fungi", is_correct: 0 },
+      { text: "Protozoa", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u3_q2",
+    topic_id: "sains_u3",
+    question_text: "A piece of dough with yeast rises after 30 minutes in a warm bowl. Which life process of yeast causes this?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Yeast breathes (respires), releasing carbon dioxide gas which gets trapped and makes the dough rise.",
+    difficulty: "medium",
+    options: [
+      { text: "Breathing and releasing carbon dioxide", is_correct: 1 },
+      { text: "Moving using flagella", is_correct: 0 },
+      { text: "Photosynthesis using sunlight", is_correct: 0 },
+      { text: "Absorbing water from the air", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u3_q3",
+    topic_id: "sains_u3",
+    question_text: "Which useful microorganism is used in the fermentation of milk to produce yogurt and cheese?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Lactobacillus bacteria are beneficial bacteria used to ferment milk into yogurt and cheese.",
+    difficulty: "easy",
+    options: [
+      { text: "Lactobacillus bacteria", is_correct: 1 },
+      { text: "Mucor mold", is_correct: 0 },
+      { text: "Influenza virus", is_correct: 0 },
+      { text: "Amoeba protozoa", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u3_q4",
+    topic_id: "sains_u3",
+    question_text: "Which set of conditions provides the most ideal environment for microorganisms to grow rapidly?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Microorganisms thrive in the presence of water (moisture), air (oxygen), nutrients, suitable acidity, and warm temperature (25°C - 37°C).",
+    difficulty: "medium",
+    options: [
+      { text: "Moisture, nutrients, air, and suitable warmth", is_correct: 1 },
+      { text: "Extreme cold, no air, and dry surface", is_correct: 0 },
+      { text: "Boiling temperature, high acidity, and no moisture", is_correct: 0 },
+      { text: "Vacuum space with zero nutrients", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u3_q5",
+    topic_id: "sains_u3",
+    question_text: "Which medical treatment uses dead or weakened microorganisms to stimulate the immune system to produce antibodies?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Vaccines contain weakened or dead microbes to train the immune system against future infections.",
+    difficulty: "medium",
+    options: [
+      { text: "Vaccines", is_correct: 1 },
+      { text: "Painkillers", is_correct: 0 },
+      { text: "Antacids", is_correct: 0 },
+      { text: "Sedatives", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u3_q6",
+    topic_id: "sains_u3",
+    question_text: "Penicillium mold is a type of fungus used to produce which famous antibiotic?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Penicillium is a fungus used to produce penicillin, an antibiotic that cures bacterial infections.",
+    difficulty: "easy",
+    options: [
+      { text: "Penicillin", is_correct: 1 },
+      { text: "Insulin", is_correct: 0 },
+      { text: "Aspirin", is_correct: 0 },
+      { text: "Paracetamol", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u3_q7",
+    topic_id: "sains_u3",
+    question_text: "All microorganisms are harmful and cause diseases in humans.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. Many microorganisms are beneficial, such as yeast in bread, bacteria in yogurt, and decomposers making fertilizer.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u3_q8",
+    topic_id: "sains_u3",
+    question_text: "Microorganisms can carry out life processes such as breathing, growing, and moving.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Microorganisms are living organisms that respire, grow in colony size, and move.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u3_q9",
+    topic_id: "sains_u3",
+    question_text: "How many major groups of microorganisms are studied in primary science (Fungi, Bacteria, Algae, Protozoa, Virus)?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "There are 5 main groups: Fungi, Bacteria, Algae, Protozoa, and Virus.",
+    difficulty: "easy",
+    options: [
+      { text: "5", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u3_q10",
+    topic_id: "sains_u3",
+    question_text: "Match the microorganism type with its correct example.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Yeast/Mucor are Fungi; E. coli is Bacteria; Amoeba is Protozoa; HIV is Virus.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Fungi", right: "Yeast and Mucor mold" },
+      { left: "Bacteria", right: "Escherichia coli and Salmonella" },
+      { left: "Protozoa", right: "Amoeba and Paramecium" },
+      { left: "Algae", right: "Spirogyra and Chlamydomonas" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 4: INTERACTION AMONG LIVING THINGS (Interaksi Antara Hidupan)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u4_q1",
+    topic_id: "sains_u4",
+    question_text: "What type of symbiosis occurs when both organisms benefit mutually from the relationship?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Mutualism is an interaction where both species gain mutual advantages (e.g. clownfish and sea anemone).",
+    difficulty: "easy",
+    options: [
+      { text: "Mutualism", is_correct: 1 },
+      { text: "Commensalism", is_correct: 0 },
+      { text: "Parasitism", is_correct: 0 },
+      { text: "Competition", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u4_q2",
+    topic_id: "sains_u4",
+    question_text: "The interaction between a remora fish and a shark is an example of commensalism because:",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "In commensalism, the remora fish gets food scraps and transport while the shark is neither harmed nor benefited.",
+    difficulty: "medium",
+    options: [
+      { text: "Remora fish benefits while the shark is unaffected", is_correct: 1 },
+      { text: "Both the remora fish and shark benefit equally", is_correct: 0 },
+      { text: "Remora fish hurts and causes disease to the shark", is_correct: 0 },
+      { text: "Shark feeds on the remora fish", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u4_q3",
+    topic_id: "sains_u4",
+    question_text: "Which of the following is a primary factor for competition among solitary animals of the same species?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Animals compete for territory, food, water, and mating partners.",
+    difficulty: "easy",
+    options: [
+      { text: "Food, water, territory, and mate", is_correct: 1 },
+      { text: "Sunlight, chlorophyll, and carbon dioxide", is_correct: 0 },
+      { text: "Air resistance and gravity", is_correct: 0 },
+      { text: "Soil type and fertilizer", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u4_q4",
+    topic_id: "sains_u4",
+    question_text: "Why do rainforest trees in dense canopies grow very tall with broad leaves?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Plants in dense forests compete intensely for sunlight to carry out photosynthesis.",
+    difficulty: "medium",
+    options: [
+      { text: "To compete for maximum sunlight", is_correct: 1 },
+      { text: "To compete for wind flow", is_correct: 0 },
+      { text: "To escape from herbivorous animals", is_correct: 0 },
+      { text: "To avoid rainwater", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u4_q5",
+    topic_id: "sains_u4",
+    question_text: "Which animal lives in a social group (living in social colonies/herds)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Elephants, ants, and bees live in cooperative groups for safety and gathering food.",
+    difficulty: "easy",
+    options: [
+      { text: "Elephant", is_correct: 1 },
+      { text: "Tiger", is_correct: 0 },
+      { text: "Leopard", is_correct: 0 },
+      { text: "Eagle", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u4_q6",
+    topic_id: "sains_u4",
+    question_text: "A tick sucking blood on a dog's skin causes weakness and itching. What type of interaction is this?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Parasitism occurs when a parasite benefits at the expense of harming the host organism.",
+    difficulty: "easy",
+    options: [
+      { text: "Parasitism", is_correct: 1 },
+      { text: "Mutualism", is_correct: 0 },
+      { text: "Commensalism", is_correct: 0 },
+      { text: "Cooperation", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u4_q7",
+    topic_id: "sains_u4",
+    question_text: "Biological control (Kawalan Biologi) uses natural predator-prey relationships to control pests without harmful chemicals.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. For example, barn owls are reared in oil palm plantations to hunt and control rat populations.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u4_q8",
+    topic_id: "sains_u4",
+    question_text: "Animals that live solitary lives frequently share their territory and food with other predators.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. Solitary animals fiercely defend their territory and avoid sharing food.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u4_q9",
+    topic_id: "sains_u4",
+    question_text: "Plants compete for 4 main factors: Sunlight, Water, Nutrients, and what fourth factor (Space)? Type 4.",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "Plants compete for 4 essential factors: Sunlight, Water, Space, and Nutrients.",
+    difficulty: "easy",
+    options: [
+      { text: "4", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u4_q10",
+    topic_id: "sains_u4",
+    question_text: "Match the symbiotic relationship with its real-world example.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Mutualism: Clownfish & Anemone; Commensalism: Bird's nest fern on tree; Parasitism: Rafflesia on host vine.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Mutualism (+/+)", right: "Clownfish and Sea Anemone" },
+      { left: "Commensalism (+/0)", right: "Bird's Nest Fern growing on tree bark" },
+      { left: "Parasitism (+/-)", right: "Rafflesia flower drawing nutrients from host vine" },
+      { left: "Predator-Prey", right: "Owl hunting rats in oil palm plantation" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 5: PRESERVATION AND CONSERVATION (Pemeliharaan & Pemuliharaan)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u5_q1",
+    topic_id: "sains_u5",
+    question_text: "Which of the following animals is EXTINCT (Pupus) and no longer exists anywhere on Earth?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The Dodo bird is completely extinct due to human hunting and habitat destruction.",
+    difficulty: "easy",
+    options: [
+      { text: "Dodo Bird", is_correct: 1 },
+      { text: "Malayan Tiger", is_correct: 0 },
+      { text: "Orangutan", is_correct: 0 },
+      { text: "Tapir", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u5_q2",
+    topic_id: "sains_u5",
+    question_text: "What is the key difference between Preservation (Pemeliharaan) and Conservation (Pemuliharaan)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Preservation means keeping habitats in their pristine natural state. Conservation means wisely managing and restoring threatened populations.",
+    difficulty: "medium",
+    options: [
+      { text: "Preservation maintains natural original state; Conservation restores and rehabilitates", is_correct: 1 },
+      { text: "Preservation hunts wild animals; Conservation captures them for zoos", is_correct: 0 },
+      { text: "Preservation builds factories; Conservation cuts forest trees", is_correct: 0 },
+      { text: "Both terms mean harvesting natural resources without limits", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u5_q3",
+    topic_id: "sains_u5",
+    question_text: "Which human activity is the biggest threat causing loss of natural habitat for orangutans in Malaysia?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Illegal and massive deforestation destroys primary forest habitats where orangutans nest and feed.",
+    difficulty: "easy",
+    options: [
+      { text: "Uncontrolled deforestation and logging", is_correct: 1 },
+      { text: "Setting up national parks", is_correct: 0 },
+      { text: "Replanting mangrove trees", is_correct: 0 },
+      { text: "Enforcing wildlife protection laws", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u5_q4",
+    topic_id: "sains_u5",
+    question_text: "Establishing Turtle Sanctuaries (Pusat Konservasi Penyu) helps conservation by:",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Hatcheries protect turtle eggs from predators and poachers before safely releasing baby turtles into the sea.",
+    difficulty: "medium",
+    options: [
+      { text: "Protecting eggs in hatcheries and releasing hatchlings safely", is_correct: 1 },
+      { text: "Selling turtle eggs at markets for high profit", is_correct: 0 },
+      { text: "Keeping adult turtles in indoor tanks permanently", is_correct: 0 },
+      { text: "Exporting sea turtles as pets overseas", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u5_q5",
+    topic_id: "sains_u5",
+    question_text: "Which of the following plants is currently endangered (terancam) due to overharvesting?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Pitcher plant (Periuk kera) and Rafflesia are endangered due to habitat loss and excessive collection.",
+    difficulty: "medium",
+    options: [
+      { text: "Pitcher Plant (Periuk Kera)", is_correct: 1 },
+      { text: "Hibiscus", is_correct: 0 },
+      { text: "Grass", is_correct: 0 },
+      { text: "Coconut Tree", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u5_q6",
+    topic_id: "sains_u5",
+    question_text: "What law enforcement action prevents illegal poaching of endangered wildlife in Malaysia?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Enforcing the Wildlife Conservation Act (Akta Pemuliharaan Hidupan Liar) and heavy penalties deter poachers.",
+    difficulty: "medium",
+    options: [
+      { text: "Enforcing Wildlife Conservation Acts and patrol reserves", is_correct: 1 },
+      { text: "Promoting animal souvenir sales", is_correct: 0 },
+      { text: "Removing forest rangers from national reserves", is_correct: 0 },
+      { text: "Allowing unlimited timber concessions", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u5_q7",
+    topic_id: "sains_u5",
+    question_text: "The Quagga and Tasmanian Tiger (Thylacine) are examples of animals that are extinct.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Both the Quagga and Tasmanian Tiger became extinct in the 19th and 20th centuries.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u5_q8",
+    topic_id: "sains_u5",
+    question_text: "Selective logging (Penebangan Terpilih) allows forests to regenerate and protects biodiversity.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Selective logging only harvests mature trees, preserving younger trees and habitats.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u5_q9",
+    topic_id: "sains_u5",
+    question_text: "Sepilok Orangutan Rehabilitation Centre in Sabah was established to rescue and rehabilitate orphaned orangutans. In which Malaysian state is Sepilok located? (Type: Sabah)",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "Sepilok is in Sandakan, Sabah.",
+    difficulty: "easy",
+    options: [
+      { text: "Sabah", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u5_q10",
+    topic_id: "sains_u5",
+    question_text: "Match the conservation/preservation initiative with its primary goal.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Sanctuary: Protects endangered animals; Marine Park: Protects coral reefs; Reforestation: Replants cleared trees.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Marine Park", right: "Protects coral reefs and marine life from harmful fishing" },
+      { left: "Elephant Sanctuary", right: "Rescues and relocates displaced wild elephants" },
+      { left: "Reforestation", right: "Replants indigenous tree saplings in degraded logged forest" },
+      { left: "Mangrove Replanting", right: "Protects coastal shorelines from erosion and tsunami waves" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 6: FORCE (Daya)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u6_q1",
+    topic_id: "sains_u6",
+    question_text: "Force is defined as a push or a pull acting upon an object. Which of the following is an effect of force?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Force can move stationary objects, stop moving objects, change speed, change direction, and change object shape.",
+    difficulty: "easy",
+    options: [
+      { text: "Changing the speed, direction, or shape of an object", is_correct: 1 },
+      { text: "Changing chemical elements into new atoms", is_correct: 0 },
+      { text: "Generating light through nuclear fusion", is_correct: 0 },
+      { text: "Creating new matter from empty space", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u6_q2",
+    topic_id: "sains_u6",
+    question_text: "Which force always opposes (acts in the opposite direction to) the motion of two surfaces in contact?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Frictional force (Daya Geseran) resists motion between contacting surfaces.",
+    difficulty: "easy",
+    options: [
+      { text: "Frictional force", is_correct: 1 },
+      { text: "Gravitational force", is_correct: 0 },
+      { text: "Magnetic force", is_correct: 0 },
+      { text: "Electrostatic force", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u6_q3",
+    topic_id: "sains_u6",
+    question_text: "Why do racing cyclists wear streamlined aerodynamic helmets and smooth tight suits?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Streamlined designs reduce air resistance (drag) allowing the cyclist to travel faster with less effort.",
+    difficulty: "medium",
+    options: [
+      { text: "To reduce air resistance (drag)", is_correct: 1 },
+      { text: "To increase gravitational pull", is_correct: 0 },
+      { text: "To increase tyre friction on asphalt", is_correct: 0 },
+      { text: "To absorb rain moisture", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u6_q4",
+    topic_id: "sains_u6",
+    question_text: "Which of the following is an example of an application that INCREASES friction for safety?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Tread patterns on vehicle tyres provide grip on wet roads to prevent skidding.",
+    difficulty: "easy",
+    options: [
+      { text: "Deep tread grooves on vehicle tyres", is_correct: 1 },
+      { text: "Applying lubricating oil into motor bearings", is_correct: 0 },
+      { text: "Polishing a bowling lane with wax", is_correct: 0 },
+      { text: "Using smooth ice on a skating rink", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u6_q5",
+    topic_id: "sains_u6",
+    question_text: "What force pulls all objects towards the center of the Earth?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Earth's Gravitational Force (Daya Tarikan Graviti) pulls all objects towards its center.",
+    difficulty: "easy",
+    options: [
+      { text: "Gravitational force", is_correct: 1 },
+      { text: "Frictional force", is_correct: 0 },
+      { text: "Buoyancy force", is_correct: 0 },
+      { text: "Elastic force", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u6_q6",
+    topic_id: "sains_u6",
+    question_text: "What happens to the friction force when a heavier box is pushed across the floor compared to a lighter box on the same surface?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "As the mass and weight pressing surfaces together increases, the frictional force increases.",
+    difficulty: "medium",
+    options: [
+      { text: "Friction increases because greater mass presses the surfaces harder", is_correct: 1 },
+      { text: "Friction decreases to zero", is_correct: 0 },
+      { text: "Friction remains completely unchanged", is_correct: 0 },
+      { text: "Friction turns into magnetic force", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u6_q7",
+    topic_id: "sains_u6",
+    question_text: "Without gravity, all unsecured objects on Earth would float away into space.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Gravity holds the atmosphere, oceans, and all living things on Earth's surface.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u6_q8",
+    topic_id: "sains_u6",
+    question_text: "Friction produces unwanted heat and causes machine parts to wear out over time.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Friction generates heat and wear, which is why lubricants like grease and oil are used.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u6_q9",
+    topic_id: "sains_u6",
+    question_text: "A spring balance measures force in Newtons (N). If 1 kg has a weight of approx 10 N, what is the weight of a 5 kg bag of rice in Newtons?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "Weight = mass × 10 N/kg = 5 × 10 = 50 N.",
+    difficulty: "medium",
+    options: [
+      { text: "50", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u6_q10",
+    topic_id: "sains_u6",
+    question_text: "Match the scenario with the method of modifying friction.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Lubricant reduces friction; Gym chalk increases grip; Ball bearings reduce sliding; Spikes on shoes increase traction.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Magnesium chalk powder on gym hands", right: "Increases friction to prevent slipping from bars" },
+      { left: "Engine motor oil", right: "Reduces friction between moving metallic piston parts" },
+      { left: "Ball bearings in bicycle wheel axle", right: "Replaces sliding friction with rolling friction" },
+      { left: "Rubber brake pads on bicycle rim", right: "Generates high friction to stop the spinning wheel" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 7: SPEED (Kelajuan)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u7_q1",
+    topic_id: "sains_u7",
+    question_text: "What is the definition of Speed (Kelajuan) in science?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Speed is the measure of how fast an object moves, defined as the distance traveled per unit of time.",
+    difficulty: "easy",
+    options: [
+      { text: "Distance traveled per unit of time", is_correct: 1 },
+      { text: "Total mass of an object multiplied by gravity", is_correct: 0 },
+      { text: "The time taken for an object to stop moving", is_correct: 0 },
+      { text: "The force required to lift a load", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u7_q2",
+    topic_id: "sains_u7",
+    question_text: "What is the standard scientific formula for calculating Speed?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Speed = Distance ÷ Time (Kelajuan = Jarak ÷ Masa).",
+    difficulty: "easy",
+    options: [
+      { text: "Speed = Distance ÷ Time", is_correct: 1 },
+      { text: "Speed = Distance × Time", is_correct: 0 },
+      { text: "Speed = Time ÷ Distance", is_correct: 0 },
+      { text: "Speed = Mass × Acceleration", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u7_q3",
+    topic_id: "sains_u7",
+    question_text: "A car travels a distance of 180 km in 2 hours. What is the speed of the car in km/h?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Speed = Distance / Time = 180 km / 2 hours = 90 km/h.",
+    difficulty: "easy",
+    options: [
+      { text: "90 km/h", is_correct: 1 },
+      { text: "60 km/h", is_correct: 0 },
+      { text: "120 km/h", is_correct: 0 },
+      { text: "360 km/h", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u7_q4",
+    topic_id: "sains_u7",
+    question_text: "Which of the following is the most suitable unit for measuring the speed of a sprinter in a 100m track event?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Sprinters cover short distances measured in meters (m) over seconds (s), hence meters per second (m/s).",
+    difficulty: "medium",
+    options: [
+      { text: "Meters per second (m/s)", is_correct: 1 },
+      { text: "Kilometers per hour (km/h)", is_correct: 0 },
+      { text: "Centimeters per year (cm/year)", is_correct: 0 },
+      { text: "Kilograms per minute (kg/min)", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u7_q5",
+    topic_id: "sains_u7",
+    question_text: "If an athlete runs at a speed of 8 m/s for 15 seconds, what is the total distance covered?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Distance = Speed × Time = 8 m/s × 15 s = 120 meters.",
+    difficulty: "medium",
+    options: [
+      { text: "120 meters", is_correct: 1 },
+      { text: "80 meters", is_correct: 0 },
+      { text: "100 meters", is_correct: 0 },
+      { text: "150 meters", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u7_q6",
+    topic_id: "sains_u7",
+    question_text: "Vehicle A travels at 60 km/h while Vehicle B travels at 90 km/h. To travel 180 km, which vehicle takes LESS time and by how many hours?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Time A = 180/60 = 3h. Time B = 180/90 = 2h. Vehicle B takes 1 hour less.",
+    difficulty: "hard",
+    options: [
+      { text: "Vehicle B takes 1 hour less than Vehicle A", is_correct: 1 },
+      { text: "Vehicle A takes 1 hour less than Vehicle B", is_correct: 0 },
+      { text: "Both vehicles arrive at the exact same time", is_correct: 0 },
+      { text: "Vehicle B takes 2 hours more than Vehicle A", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u7_q7",
+    topic_id: "sains_u7",
+    question_text: "An object moving at a higher speed will travel a greater distance within the same amount of time.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Higher speed means more distance covered per unit of time.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u7_q8",
+    topic_id: "sains_u7",
+    question_text: "Centimeters per second (cm/s) is a unit typically used to measure fast aircraft.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. cm/s is used for slow moving creatures like snails or turtles. Aircraft speed is measured in km/h or Mach.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u7_q9",
+    topic_id: "sains_u7",
+    question_text: "An express bus travels 240 km from Kuala Lumpur to Ipoh at a constant speed of 80 km/h. How many hours did the journey take?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "Time = Distance ÷ Speed = 240 km ÷ 80 km/h = 3 hours.",
+    difficulty: "medium",
+    options: [
+      { text: "3", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u7_q10",
+    topic_id: "sains_u7",
+    question_text: "Match the moving object with its most appropriate speed measurement unit.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Snail: cm/s; Sprinter: m/s; Aeroplane/Car: km/h; Glacier/Tectonic plate: cm/year.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Crawling Snail", right: "Centimeters per second (cm/s)" },
+      { left: "100m Olympic Sprinter", right: "Meters per second (m/s)" },
+      { left: "Commercial Passenger Aeroplane", right: "Kilometers per hour (km/h)" },
+      { left: "Moving Continental Tectonic Plate", right: "Centimeters per year (cm/year)" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 8: FOOD PRESERVATION TECHNOLOGY (Teknologi Pengawetan Makanan)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u8_q1",
+    topic_id: "sains_u8",
+    question_text: "Which of the following is a clear sign that fresh milk has spoiled?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Spoiled milk turns sour in smell and taste, curdles into slimy lumps, and changes color.",
+    difficulty: "easy",
+    options: [
+      { text: "Sour smell, curdled lumps, and unpleasant taste", is_correct: 1 },
+      { text: "Smooth white liquid texture", is_correct: 0 },
+      { text: "Sweet creamy taste", is_correct: 0 },
+      { text: "Cold temperature", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u8_q2",
+    topic_id: "sains_u8",
+    question_text: "How does the Drying (Pengeringan) method preserve food like salted fish and dried squid?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Drying removes water and moisture from food. Microorganisms cannot grow or survive without moisture.",
+    difficulty: "easy",
+    options: [
+      { text: "Removes moisture so microorganisms cannot grow", is_correct: 1 },
+      { text: "Adds high oxygen to kill bacteria", is_correct: 0 },
+      { text: "Increases acidity to pH 1", is_correct: 0 },
+      { text: "Freezes water into solid ice crystals", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u8_q3",
+    topic_id: "sains_u8",
+    question_text: "What is the scientific principle behind Pasteurisation (Pasteuran) for fresh fruit juices and milk?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Pasteurization heats liquid to a specific temperature below boiling (e.g. 72°C for 15s) then immediately cools it rapidly.",
+    difficulty: "medium",
+    options: [
+      { text: "Heating to a specific temperature followed by rapid cooling", is_correct: 1 },
+      { text: "Soaking food in high concentrated vinegar", is_correct: 0 },
+      { text: "Extracting all air in a vacuum bag", is_correct: 0 },
+      { text: "Coating food with melted liquid wax", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u8_q4",
+    topic_id: "sains_u8",
+    question_text: "Pickling (Penjerukan) uses vinegar (acetic acid) or concentrated sugar solution. Why does this preserve fruit?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "High acidity (low pH) and concentrated solutions make the environment too hostile for bacteria and fungi to thrive.",
+    difficulty: "medium",
+    options: [
+      { text: "Creates a highly acidic and concentrated environment unsuitable for microbes", is_correct: 1 },
+      { text: "Freezes the fruit cells into solid ice", is_correct: 0 },
+      { text: "Absorbs sunlight to kill molds", is_correct: 0 },
+      { text: "Removes all solid particles from the fruit", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u8_q5",
+    topic_id: "sains_u8",
+    question_text: "Which food preservation method removes all air before sealing to prevent aerobic bacteria growth?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Vacuum packing extracts all air (oxygen) so aerobic microbes cannot grow.",
+    difficulty: "easy",
+    options: [
+      { text: "Vacuum packing", is_correct: 1 },
+      { text: "Waxing", is_correct: 0 },
+      { text: "Salting", is_correct: 0 },
+      { text: "Smoking", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u8_q6",
+    topic_id: "sains_u8",
+    question_text: "What is a key importance of food preservation technology for human society?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Food preservation prevents food wastage, ensures emergency food supply, and enables food exports worldwide.",
+    difficulty: "easy",
+    options: [
+      { text: "Extends shelf life and allows out-of-season food availability", is_correct: 1 },
+      { text: "Increases the price of all fresh farm vegetables", is_correct: 0 },
+      { text: "Changes the chemical formula of carbohydrates into metal", is_correct: 0 },
+      { text: "Stops humans from needing to eat meals daily", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u8_q7",
+    topic_id: "sains_u8",
+    question_text: "Canning uses high-pressure heat sterilization to destroy all bacteria and spores before airtight sealing.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Canned foods are heated to over 115°C-121°C under pressure to kill all pathogens.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u8_q8",
+    topic_id: "sains_u8",
+    question_text: "Freezing food at -18°C kills all microorganisms permanently.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. Freezing only makes microorganisms dormant (inactive); they become active again when thawed.",
+    difficulty: "medium",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u8_q9",
+    topic_id: "sains_u8",
+    question_text: "In the pasteurization of milk, milk is commonly heated to approximately 72°C for how many seconds? (Type: 15)",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "High-temperature short-time pasteurization heats milk to 72°C for 15 seconds.",
+    difficulty: "hard",
+    options: [
+      { text: "15", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u8_q10",
+    topic_id: "sains_u8",
+    question_text: "Match the food item with its primary preservation method.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Salted fish: Salting & Drying; Milk: Pasteurisation; Mango pickle: Pickling; Sardines: Canning.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Salted Fish", right: "Salting and sun drying to extract water" },
+      { left: "Fresh Cow Milk", right: "Pasteurisation (heating then rapid chilling)" },
+      { left: "Sour Mango Slices", right: "Pickling in vinegar and sugar solution" },
+      { left: "Sardine Fish", right: "Canning with high-pressure boiling sterilization" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 9: WASTE MANAGEMENT (Pengurusan Bahan Buangan)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u9_q1",
+    topic_id: "sains_u9",
+    question_text: "Which of the following is a Biodegradable Waste (Bahan Buangan Terbiodegradasi)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Biodegradable waste can be naturally decomposed by microorganisms (e.g. food scraps, fruit peels, dry leaves).",
+    difficulty: "easy",
+    options: [
+      { text: "Banana fruit peels and leftover rice", is_correct: 1 },
+      { text: "Polystyrene food containers", is_correct: 0 },
+      { text: "Plastic water bottles", is_correct: 0 },
+      { text: "Glass jars and aluminium cans", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u9_q2",
+    topic_id: "sains_u9",
+    question_text: "Why is uncontrolled disposal of non-biodegradable plastics harmful to marine ecosystems?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Plastics do not rot and can be mistaken for food by turtles and marine animals, causing death from blockages.",
+    difficulty: "easy",
+    options: [
+      { text: "Marine animals mistake plastic bags for jellyfish and choke", is_correct: 1 },
+      { text: "Plastics dissolve instantly and turn into acid", is_correct: 0 },
+      { text: "Plastics evaporate and heat up the ozone layer", is_correct: 0 },
+      { text: "Plastics make ocean water turn into solid ice", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u9_q3",
+    topic_id: "sains_u9",
+    question_text: "What are the 5R principles in sustainable waste management?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The 5R principle stands for Refuse, Reduce, Reuse, Recycle, and Rethink (or Repair).",
+    difficulty: "medium",
+    options: [
+      { text: "Refuse, Reduce, Reuse, Recycle, Repair (5R)", is_correct: 1 },
+      { text: "Run, Read, Rest, Relax, Repeat", is_correct: 0 },
+      { text: "React, Remove, Replace, Rebuild, Resell", is_correct: 0 },
+      { text: "Rotate, Reverse, Return, Restore, Retain", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u9_q4",
+    topic_id: "sains_u9",
+    question_text: "What ecological benefit is achieved by converting organic food scraps into compost fertilizer?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Composting turns organic waste into natural nutrient-rich soil fertilizer, reducing landfill burden.",
+    difficulty: "medium",
+    options: [
+      { text: "Produces natural organic fertilizer and reduces landfill waste", is_correct: 1 },
+      { text: "Creates plastic polymer building bricks", is_correct: 0 },
+      { text: "Purifies tap water into distilled water", is_correct: 0 },
+      { text: "Generates heavy metallic compounds", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u9_q5",
+    topic_id: "sains_u9",
+    question_text: "Which color recycling bin is designated for Glass bottles and jars in Malaysia?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Brown bin is for Glass, Blue bin is for Paper, Orange bin is for Plastics & Aluminium Cans.",
+    difficulty: "medium",
+    options: [
+      { text: "Brown recycling bin", is_correct: 1 },
+      { text: "Blue recycling bin", is_correct: 0 },
+      { text: "Orange recycling bin", is_correct: 0 },
+      { text: "Green recycling bin", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u9_q6",
+    topic_id: "sains_u9",
+    question_text: "Improper disposal of solid waste into drainage systems and rivers directly causes:",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Clogged drains and rivers cause flash floods (banjir kilat) during heavy downpours.",
+    difficulty: "easy",
+    options: [
+      { text: "Flash floods and water pollution", is_correct: 1 },
+      { text: "Volcanic eruptions", is_correct: 0 },
+      { text: "Earthquakes", is_correct: 0 },
+      { text: "Solar eclipses", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u9_q7",
+    topic_id: "sains_u9",
+    question_text: "Toxic chemical wastes from factories must be treated before being discharged into water bodies.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Industrial wastewater treatment neutralizes acids and removes heavy metals to safeguard aquatic ecosystems.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u9_q8",
+    topic_id: "sains_u9",
+    question_text: "Open burning of domestic garbage is an eco-friendly practice recommended by the government.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. Open burning produces toxic haze, greenhouse gases, and particulate matter causing air pollution.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u9_q9",
+    topic_id: "sains_u9",
+    question_text: "How many designated recycling bin colors are standard in Malaysia (Blue for paper, Orange for plastics/cans, Brown for glass)?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "There are 3 standard recycling bin colors: Blue, Orange, and Brown.",
+    difficulty: "easy",
+    options: [
+      { text: "3", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u9_q10",
+    topic_id: "sains_u9",
+    question_text: "Match the recycling bin color with the correct recyclable material in Malaysia.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Blue = Paper; Orange = Plastics & Aluminium; Brown = Glass.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Blue Bin", right: "Newspapers, cardboard boxes, and magazines" },
+      { left: "Orange Bin", right: "Plastic containers, drink cans, and aluminium foil" },
+      { left: "Brown Bin", right: "Glass bottles, perfume vials, and glass jars" },
+      { left: "Compost Bin", right: "Vegetable scraps, fruit peels, and dry garden leaves" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 10: ECLIPSES (Gerhana)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u10_q1",
+    topic_id: "sains_u10",
+    question_text: "What properties of light cause eclipses (gerhana) to occur?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Eclipses happen because light travels in straight lines and cannot pass through opaque objects (Earth/Moon), forming shadows.",
+    difficulty: "easy",
+    options: [
+      { text: "Light travels in straight lines and forms shadows behind opaque objects", is_correct: 1 },
+      { text: "Light bends when traveling through water", is_correct: 0 },
+      { text: "Light reflects off smooth mirrors", is_correct: 0 },
+      { text: "Light disperses into a rainbow spectrum", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u10_q2",
+    topic_id: "sains_u10",
+    question_text: "What is the correct alignment of celestial bodies during a Lunar Eclipse (Gerhana Bulan)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Sun - Earth - Moon in a straight line. The Earth blocks sunlight from reaching the Moon.",
+    difficulty: "medium",
+    options: [
+      { text: "Sun — Earth — Moon (in a straight line)", is_correct: 1 },
+      { text: "Sun — Moon — Earth (in a straight line)", is_correct: 0 },
+      { text: "Earth — Sun — Moon (in a straight line)", is_correct: 0 },
+      { text: "Moon — Sun — Earth (in a straight line)", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u10_q3",
+    topic_id: "sains_u10",
+    question_text: "What is the correct alignment of celestial bodies during a Solar Eclipse (Gerhana Matahari)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Sun - Moon - Earth in a straight line. The Moon casts its shadow onto Earth during the day.",
+    difficulty: "medium",
+    options: [
+      { text: "Sun — Moon — Earth (in a straight line)", is_correct: 1 },
+      { text: "Sun — Earth — Moon (in a straight line)", is_correct: 0 },
+      { text: "Earth — Sun — Moon (in a straight line)", is_correct: 0 },
+      { text: "Moon — Earth — Sun (in a straight line)", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u10_q4",
+    topic_id: "sains_u10",
+    question_text: "Why does the Moon appear reddish-brown during a Total Lunar Eclipse?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Sunlight is scattered by Earth's atmosphere; red wavelengths refract through Earth's atmosphere and illuminate the Moon.",
+    difficulty: "hard",
+    options: [
+      { text: "Red light from the Sun is refracted through Earth's atmosphere onto the Moon", is_correct: 1 },
+      { text: "The Moon's volcanic rocks catch fire", is_correct: 0 },
+      { text: "Solar flares explode on the Moon surface", is_correct: 0 },
+      { text: "The Moon turns into a glowing comet", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u10_q5",
+    topic_id: "sains_u10",
+    question_text: "What is the fully dark, central region of a shadow cast during an eclipse called?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The completely dark inner shadow is the Umbra; the lighter partial shadow is the Penumbra.",
+    difficulty: "medium",
+    options: [
+      { text: "Umbra", is_correct: 1 },
+      { text: "Penumbra", is_correct: 0 },
+      { text: "Corona", is_correct: 0 },
+      { text: "Atmosphere", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u10_q6",
+    topic_id: "sains_u10",
+    question_text: "A Solar Eclipse only occurs during which phase of the Moon?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Solar eclipses occur only during the New Moon (Anak Bulan) phase when the Moon is between Sun and Earth.",
+    difficulty: "medium",
+    options: [
+      { text: "New Moon phase (Anak Bulan)", is_correct: 1 },
+      { text: "Full Moon phase (Bulan Purnama)", is_correct: 0 },
+      { text: "Half Moon phase", is_correct: 0 },
+      { text: "Crescent Moon phase", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u10_q7",
+    topic_id: "sains_u10",
+    question_text: "A Total Solar Eclipse lasts only a few minutes because the Moon's shadow on Earth is small and moves fast.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. The Moon is much smaller than Earth, so its umbra covers only a small path on Earth for a few minutes (max ~7.5 mins).",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u10_q8",
+    topic_id: "sains_u10",
+    question_text: "It is completely safe to look directly at a Solar Eclipse with the naked eye without special solar filters.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. Looking directly at the Sun can cause permanent retinal damage and blindness. Certified solar eclipse glasses are required.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u10_q9",
+    topic_id: "sains_u10",
+    question_text: "A Lunar Eclipse occurs when which celestial body is positioned in the middle between the Sun and the Moon? (Type: Earth)",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "The Earth is in the middle during a Lunar Eclipse.",
+    difficulty: "easy",
+    options: [
+      { text: "Earth", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u10_q10",
+    topic_id: "sains_u10",
+    question_text: "Match the eclipse concept with its defining characteristic.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Lunar: Night / Full Moon; Solar: Day / New Moon; Umbra: Total dark; Penumbra: Partial dark.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Lunar Eclipse (Gerhana Bulan)", right: "Occurs at night during Full Moon phase when Earth is in middle" },
+      { left: "Solar Eclipse (Gerhana Matahari)", right: "Occurs during the day at New Moon phase when Moon is in middle" },
+      { left: "Umbra Shadow Region", right: "Area of total darkness where all direct light is blocked" },
+      { left: "Penumbra Shadow Region", right: "Area of partial shadow where only part of light is blocked" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 11: GALAXY (Galaksi)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u11_q1",
+    topic_id: "sains_u11",
+    question_text: "What is a Galaxy (Galaksi)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "A galaxy is a massive gravitationally bound system consisting of millions to billions of stars, gas clouds, dust, and planetary systems.",
+    difficulty: "easy",
+    options: [
+      { text: "A massive system of millions to billions of stars, gas, and dust bound by gravity", is_correct: 1 },
+      { text: "A single planet with rings orbiting the Sun", is_correct: 0 },
+      { text: "A shooting meteor entering Earth's atmosphere", is_correct: 0 },
+      { text: "A constellation of 7 visible stars in the night sky", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u11_q2",
+    topic_id: "sains_u11",
+    question_text: "What is the name of the galaxy that contains our Solar System and Planet Earth?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Our Solar System is located within the Milky Way Galaxy (Galaksi Bima Sakti).",
+    difficulty: "easy",
+    options: [
+      { text: "Milky Way Galaxy (Galaksi Bima Sakti)", is_correct: 1 },
+      { text: "Andromeda Galaxy", is_correct: 0 },
+      { text: "Whirlpool Galaxy", is_correct: 0 },
+      { text: "Sombrero Galaxy", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u11_q3",
+    topic_id: "sains_u11",
+    question_text: "What shape does the Milky Way Galaxy have?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The Milky Way is a barred Spiral Galaxy (Galaksi Berpilin) with rotating spiral arms.",
+    difficulty: "easy",
+    options: [
+      { text: "Spiral galaxy (Galaksi berpilin)", is_correct: 1 },
+      { text: "Elliptical galaxy (Galaksi elips)", is_correct: 0 },
+      { text: "Irregular galaxy (Galaksi tidak seragam)", is_correct: 0 },
+      { text: "Perfect triangular galaxy", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u11_q4",
+    topic_id: "sains_u11",
+    question_text: "Where is our Solar System situated within the Milky Way galaxy?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Our Solar System is located on one of the spiral arms (the Orion Arm), far from the intense galactic center.",
+    difficulty: "medium",
+    options: [
+      { text: "On one of the outer spiral arms (the Orion Arm)", is_correct: 1 },
+      { text: "Directly in the supermassive center of the galaxy", is_correct: 0 },
+      { text: "Completely outside the galaxy in intergalactic space", is_correct: 0 },
+      { text: "Orbiting closely around the Andromeda core", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u11_q5",
+    topic_id: "sains_u11",
+    question_text: "What are the three main classifications of galaxies based on their visual shape?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Galaxies are classified into Spiral (berpilin), Elliptical (elips), and Irregular (tidak seragam).",
+    difficulty: "medium",
+    options: [
+      { text: "Spiral, Elliptical, and Irregular galaxies", is_correct: 1 },
+      { text: "Circular, Square, and Triangular galaxies", is_correct: 0 },
+      { text: "Hot, Warm, and Cold galaxies", is_correct: 0 },
+      { text: "Gaseous, Liquid, and Solid galaxies", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u11_q6",
+    topic_id: "sains_u11",
+    question_text: "How does the Milky Way Galaxy appear when observed from a dark night sky on Earth without light pollution?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "It appears as a faint glowing milky band of starry light stretching across the sky.",
+    difficulty: "medium",
+    options: [
+      { text: "A faint glowing hazy band of countless stars across the night sky", is_correct: 1 },
+      { text: "A bright green ring spinning around the Moon", is_correct: 0 },
+      { text: "A dark black hole that blocks all starlight", is_correct: 0 },
+      { text: "A single huge flashing yellow star", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u11_q7",
+    topic_id: "sains_u11",
+    question_text: "The Sun is the only star that exists in the entire Milky Way Galaxy.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. The Milky Way contains an estimated 100 to 400 billion stars, of which our Sun is just one.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u11_q8",
+    topic_id: "sains_u11",
+    question_text: "Gravity is the primary force that holds billions of stars and planetary systems together within a galaxy.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Gravitational attraction keeps all stars and matter bound in orbital motion around the galaxy core.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u11_q9",
+    topic_id: "sains_u11",
+    question_text: "How many main types of galaxy shapes are recognized in science (Spiral, Elliptical, Irregular)?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "There are 3 main classifications of galaxies: Spiral, Elliptical, and Irregular.",
+    difficulty: "easy",
+    options: [
+      { text: "3", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u11_q10",
+    topic_id: "sains_u11",
+    question_text: "Match the galaxy type with its visual description.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Spiral: Pinwheel arms; Elliptical: Smooth oval; Irregular: No distinct shape; Milky Way: Home galaxy.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Spiral Galaxy (Berpilin)", right: "Disk with rotating arms curved outwards like a pinwheel" },
+      { left: "Elliptical Galaxy (Elips)", right: "Smooth oval or spherical shape with brightest light at center" },
+      { left: "Irregular Galaxy (Tidak Seragam)", right: "Chaotic shape without symmetry or defined central core" },
+      { left: "Milky Way (Bima Sakti)", right: "Our barred spiral galaxy containing over 100 billion stars" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 12: STABILITY AND STRENGTH (Kestabilan dan Kekuatan)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u12_q1",
+    topic_id: "sains_u12",
+    question_text: "What two main factors determine the STABILITY (Kestabilan) of an object or building structure?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Stability depends on: 1. Base area (Luas tapak - larger is more stable) and 2. Height / Center of gravity (lower is more stable).",
+    difficulty: "easy",
+    options: [
+      { text: "Base area and height (center of gravity)", is_correct: 1 },
+      { text: "Color and surface brightness", is_correct: 0 },
+      { text: "Electrical conductivity and magnetism", is_correct: 0 },
+      { text: "Temperature and boiling point", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u12_q2",
+    topic_id: "sains_u12",
+    question_text: "Which of the following objects has the HIGHEST stability against toppling over when pushed?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "A cone resting on its broad flat base has a wide base area and a very low center of gravity.",
+    difficulty: "medium",
+    options: [
+      { text: "A broad-based low pyramid or cone resting on its base", is_correct: 1 },
+      { text: "A tall thin cylinder standing on its edge", is_correct: 0 },
+      { text: "A pencil balanced upright on its sharp tip", is_correct: 0 },
+      { text: "A high ladder leaning on one leg", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u12_q3",
+    topic_id: "sains_u12",
+    question_text: "What two main factors determine the STRENGTH (Kekuatan) of a structure to support heavy loads without breaking?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Strength depends on: 1. Types of materials used (concrete, steel, timber) and 2. Structural shapes (arches, cylinders, triangles/trusses, corrugated).",
+    difficulty: "medium",
+    options: [
+      { text: "Types of materials used and structural shapes", is_correct: 1 },
+      { text: "Paint color and shiny gloss", is_correct: 0 },
+      { text: "Wind speed and atmospheric humidity", is_correct: 0 },
+      { text: "Time of construction during the year", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u12_q4",
+    topic_id: "sains_u12",
+    question_text: "Why are bridge trusses and construction cranes built using TRIANGULAR shapes (Truss system)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Triangles are rigid shapes that distribute compressive and tensile loads evenly without deforming.",
+    difficulty: "medium",
+    options: [
+      { text: "Triangles distribute forces evenly and resist deformation under heavy loads", is_correct: 1 },
+      { text: "Triangles reflect sunlight to cool the steel", is_correct: 0 },
+      { text: "Triangles are the only shapes allowed by building law", is_correct: 0 },
+      { text: "Triangles make the structure weigh twice as much", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u12_q5",
+    topic_id: "sains_u12",
+    question_text: "Why do Formula 1 racing cars have wide wheelbases and a very low chassis close to the ground?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "A wide base area and low center of gravity provide maximum stability during high-speed cornering.",
+    difficulty: "easy",
+    options: [
+      { text: "To maximize stability and prevent overturning at high speeds", is_correct: 1 },
+      { text: "To make the engine produce loud sound", is_correct: 0 },
+      { text: "To allow rain water to enter the cockpit", is_correct: 0 },
+      { text: "To increase total fuel weight", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u12_q6",
+    topic_id: "sains_u12",
+    question_text: "Why is corrugated cardboard (kertas bergelombang) significantly stronger than flat paper sheets of equal weight?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "The wavy wave flutes act as a continuous series of arches that resist bending and compressive forces.",
+    difficulty: "medium",
+    options: [
+      { text: "Wavy fluting acts like arches to provide high strength against bending", is_correct: 1 },
+      { text: "Corrugated paper contains heavy iron fibres", is_correct: 0 },
+      { text: "Wavy paper is waterproof and dissolves in oil", is_correct: 0 },
+      { text: "Corrugated paper generates magnetic fields", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u12_q7",
+    topic_id: "sains_u12",
+    question_text: "A structure becomes more stable when its center of gravity is positioned as low as possible.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Lower center of gravity means an object requires a much larger tilt angle before its line of action falls outside its base area.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u12_q8",
+    topic_id: "sains_u12",
+    question_text: "A hollow steel cylinder is weaker and bends more easily than a thin solid flat steel plate of equal mass.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "False. Cylindrical columns distribute load radially and resist buckling far better than flat plates.",
+    difficulty: "easy",
+    options: [
+      { text: "False", is_correct: 1 },
+      { text: "True", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u12_q9",
+    topic_id: "sains_u12",
+    question_text: "How many legs does a laboratory tripod stand have to provide a stable, non-wobbling base for beakers?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "A tripod has 3 legs (3 points of contact define a stable plane).",
+    difficulty: "easy",
+    options: [
+      { text: "3", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u12_q10",
+    topic_id: "sains_u12",
+    question_text: "Match the structural design feature with its engineering purpose.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Concrete + Steel: Reinforced strength; Wide base: Stability; Arch: Distributes weight; Corrugated sheet: Resists bending.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Reinforced Concrete (Steel + Cement)", right: "Provides high tensile and compressive strength for skyscrapers" },
+      { left: "Wide Spreading Base Footing", right: "Increases stability by enlarging base contact area" },
+      { left: "Curved Arch Bridge Structure", right: "Redirects heavy overhead weight outward and downward into abutments" },
+      { left: "Corrugated Zinc Roofing Sheets", right: "Wavy shape provides rigidity against sagging and heavy storms" }
+    ]
+  }
+);
+
+// ==========================================
+// UNIT 13: TECHNOLOGY (Teknologi)
+// ==========================================
+questions.push(
+  {
+    id: "sains_u13_q1",
+    topic_id: "sains_u13",
+    question_text: "What is the primary definition of Technology (Teknologi) in science and human life?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Technology is the application of scientific knowledge to invent tools and methods that solve human problems and make work easier.",
+    difficulty: "easy",
+    options: [
+      { text: "Application of scientific knowledge to create tools and solve problems", is_correct: 1 },
+      { text: "Studying only rocks and fossils in the ground", is_correct: 0 },
+      { text: "The natural reproduction cycle of wild animals", is_correct: 0 },
+      { text: "The weather patterns across seasons", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u13_q2",
+    topic_id: "sains_u13",
+    question_text: "Which of the following illustrates the development of technology in land transportation?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Transportation developed from walking/animal carriages ➔ steam trains ➔ petrol motorcars ➔ high-speed bullet trains (ETS/Maglev).",
+    difficulty: "easy",
+    options: [
+      { text: "Walking / Bull cart ➔ Steam locomotive ➔ High-speed electric train", is_correct: 1 },
+      { text: "Aeroplane ➔ Sailboat ➔ Walking", is_correct: 0 },
+      { text: "Motorcycle ➔ Bicycle ➔ Running", is_correct: 0 },
+      { text: "Computer ➔ Typewriter ➔ Quill pen", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u13_q3",
+    topic_id: "sains_u13",
+    question_text: "A complex machine (mesin kompleks) is defined as a machine that:",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "A complex machine is made up of a combination of two or more simple machines (e.g. wheel and axle, gear, lever, pulley).",
+    difficulty: "medium",
+    options: [
+      { text: "Combines two or more simple machines working together", is_correct: 1 },
+      { text: "Works only using nuclear energy", is_correct: 0 },
+      { text: "Can never be broken or repaired", is_correct: 0 },
+      { text: "Has zero moving parts", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u13_q4",
+    topic_id: "sains_u13",
+    question_text: "A bicycle is a complex machine consisting of which simple machines?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "A bicycle combines wheel and axle (wheels/pedals), gears (sprockets/chain), levers (brake handles), and screws (bolts).",
+    difficulty: "medium",
+    options: [
+      { text: "Wheel and axle, gears, levers, and screws", is_correct: 1 },
+      { text: "Inclined plane, wedge, and laser beam", is_correct: 0 },
+      { text: "Steam turbine and chemical battery only", is_correct: 0 },
+      { text: "Pulley and magnet only", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u13_q5",
+    topic_id: "sains_u13",
+    question_text: "What is Sustainable Technology (Teknologi Lestari)?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Sustainable technology meets present needs using renewable energy and eco-friendly materials without harming future generations.",
+    difficulty: "medium",
+    options: [
+      { text: "Eco-friendly technology that preserves natural resources and avoids pollution", is_correct: 1 },
+      { text: "Technology that uses single-use toxic materials", is_correct: 0 },
+      { text: "Machines that run exclusively on burning coal", is_correct: 0 },
+      { text: "Expensive tools designed to be thrown away after one use", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u13_q6",
+    topic_id: "sains_u13",
+    question_text: "Which of the following is a negative impact of improper technology usage on our environment?",
+    question_type: "mcq",
+    diagram_svg: null,
+    explanation: "Uncontrolled industrial factory emissions, plastic waste, and vehicle exhaust lead to global warming and pollution.",
+    difficulty: "easy",
+    options: [
+      { text: "Air and water pollution from factory effluents and toxic e-waste", is_correct: 1 },
+      { text: "Faster communication via video calls", is_correct: 0 },
+      { text: "More efficient harvest in agriculture", is_correct: 0 },
+      { text: "Quick medical disease detection with MRI scans", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u13_q7",
+    topic_id: "sains_u13",
+    question_text: "Solar panels (photovoltaic cells) and wind turbines are examples of green sustainable energy technology.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Solar and wind technologies harness clean, renewable energy sources without emitting greenhouse gases.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u13_q8",
+    topic_id: "sains_u13",
+    question_text: "Technological advancement in medicine (such as vaccines, MRI scanners, and robotic surgery) has improved human life expectancy.",
+    question_type: "true_false",
+    diagram_svg: null,
+    explanation: "True. Modern medical technology allows early diagnosis, effective treatment, and disease prevention.",
+    difficulty: "easy",
+    options: [
+      { text: "True", is_correct: 1 },
+      { text: "False", is_correct: 0 }
+    ]
+  },
+  {
+    id: "sains_u13_q9",
+    topic_id: "sains_u13",
+    question_text: "How many basic simple machines are traditionally taught in science (Lever, Pulley, Wheel and axle, Inclined plane, Wedge, Screw, Gear)?",
+    question_type: "numeric",
+    diagram_svg: null,
+    explanation: "There are 7 standard simple machines: Lever, Pulley, Wheel and axle, Inclined plane, Wedge, Screw, and Gear.",
+    difficulty: "medium",
+    options: [
+      { text: "7", is_correct: 1 }
+    ]
+  },
+  {
+    id: "sains_u13_q10",
+    topic_id: "sains_u13",
+    question_text: "Match the field of human life with its modern technological innovation.",
+    question_type: "drag_drop",
+    diagram_svg: null,
+    explanation: "Agriculture: Harvester/Drone; Medicine: MRI scan; Communication: Smartphone/5G; Energy: Solar panel.",
+    difficulty: "medium",
+    matching_pairs: [
+      { left: "Agriculture & Farming", right: "Automated combine harvester machine and agricultural crop drones" },
+      { left: "Healthcare & Medicine", right: "Magnetic Resonance Imaging (MRI) and robotic surgery" },
+      { left: "Global Communication", right: "Fiber optic internet, 5G networks, and smartphones" },
+      { left: "Green Renewable Energy", right: "Solar photovoltaic panels and offshore wind turbines" }
+    ]
+  }
+);
+
+// Write to files
+const outPathPublic = path.join(__dirname, '../public/data/sains_questions.json');
+const outPathSrc = path.join(__dirname, '../src/data/sains_questions.json');
+
+fs.writeFileSync(outPathPublic, JSON.stringify(questions, null, 2), 'utf8');
+fs.writeFileSync(outPathSrc, JSON.stringify(questions, null, 2), 'utf8');
+
+console.log(`Successfully generated ${questions.length} questions for Sains DLP across 13 units.`);

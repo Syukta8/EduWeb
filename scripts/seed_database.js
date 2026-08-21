@@ -28,16 +28,20 @@ const subjectsData = [
 ];
 
 const topicsData = [
-  // SAINS DLP TOPICS (9 Units)
+  // SAINS DLP TOPICS (13 Units - KSSR Semakan)
   { id: 'sains_u1', subject_id: 'sains', unit_number: 1, title: 'Unit 1: Scientific Skills', description: 'Manipulative skills, hypotheses, variables & experimental controls' },
-  { id: 'sains_u2', subject_id: 'sains', unit_number: 2, title: 'Unit 2: Microorganisms', description: 'Fungi, Bacteria, Algae, Protozoa, Virus & Life processes' },
-  { id: 'sains_u3', subject_id: 'sains', unit_number: 3, title: 'Unit 3: Interaction Among Living Things', description: 'Competition, Symbiosis (Mutualism, Commensalism, Parasitism)' },
-  { id: 'sains_u4', subject_id: 'sains', unit_number: 4, title: 'Unit 4: Preservation and Conservation', description: 'Threatened species, extinct animals, and environmental protection' },
-  { id: 'sains_u5', subject_id: 'sains', unit_number: 5, title: 'Unit 5: Force & Motion', description: 'Effects of force, friction, air resistance and surface texture' },
-  { id: 'sains_u6', subject_id: 'sains', unit_number: 6, title: 'Unit 6: Food Preservation', description: 'Drying, boiling, pickling, vacuum packing & pasteurisation' },
-  { id: 'sains_u7', subject_id: 'sains', unit_number: 7, title: 'Unit 7: Waste Management', description: 'Biodegradable vs non-biodegradable waste, 5R principle' },
-  { id: 'sains_u8', subject_id: 'sains', unit_number: 8, title: 'Unit 8: Eclipses (Gerhana)', description: 'Solar eclipse and Lunar eclipse positions and light propagation' },
-  { id: 'sains_u9', subject_id: 'sains', unit_number: 9, title: 'Unit 9: Simple & Complex Machines', description: 'Levers, gears, pulleys, wheel & axle, inclined planes' },
+  { id: 'sains_u2', subject_id: 'sains', unit_number: 2, title: 'Unit 2: Humans', description: 'Reproductive systems, fertilisation, central & peripheral nervous system' },
+  { id: 'sains_u3', subject_id: 'sains', unit_number: 3, title: 'Unit 3: Microorganisms', description: 'Fungi, bacteria, algae, protozoa, virus & life processes' },
+  { id: 'sains_u4', subject_id: 'sains', unit_number: 4, title: 'Unit 4: Interaction Among Living Things', description: 'Competition, Symbiosis (Mutualism, Commensalism, Parasitism) & biological control' },
+  { id: 'sains_u5', subject_id: 'sains', unit_number: 5, title: 'Unit 5: Preservation and Conservation', description: 'Threatened & extinct species, environmental protection, sanctuaries' },
+  { id: 'sains_u6', subject_id: 'sains', unit_number: 6, title: 'Unit 6: Force', description: 'Effects of force, frictional force, gravitational pull & air resistance' },
+  { id: 'sains_u7', subject_id: 'sains', unit_number: 7, title: 'Unit 7: Speed', description: 'Speed concept, formula (Speed = Distance ÷ Time), unit conversions & calculations' },
+  { id: 'sains_u8', subject_id: 'sains', unit_number: 8, title: 'Unit 8: Food Preservation Technology', description: 'Drying, boiling, pickling, pasteurisation, vacuum packing & canning' },
+  { id: 'sains_u9', subject_id: 'sains', unit_number: 9, title: 'Unit 9: Waste Management', description: 'Biodegradable vs non-biodegradable waste, 5R practices & recycling' },
+  { id: 'sains_u10', subject_id: 'sains', unit_number: 10, title: 'Unit 10: Eclipses', description: 'Lunar eclipse & solar eclipse positions, umbra, penumbra & properties of light' },
+  { id: 'sains_u11', subject_id: 'sains', unit_number: 11, title: 'Unit 11: Galaxy', description: 'Milky Way (Bima Sakti), spiral structure, solar system location & universe' },
+  { id: 'sains_u12', subject_id: 'sains', unit_number: 12, title: 'Unit 12: Stability and Strength', description: 'Factors of stability (base area & height) and strength (shapes & materials)' },
+  { id: 'sains_u13', subject_id: 'sains', unit_number: 13, title: 'Unit 13: Technology', description: 'Development of technology, simple & complex machines, sustainable development' },
 
   // MATEMATIK DLP TOPICS (7 Units)
   { id: 'math_u1', subject_id: 'matematik', unit_number: 1, title: 'Unit 1: Whole Numbers & Operations', description: 'Prime numbers up to 100, million fractions, standard operations' },
