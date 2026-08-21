@@ -3,3 +3,4 @@ database.sqlite
 .ds_store
 *.log
 *.pdf
+.firebase/

@@ -58,12 +58,18 @@ class DLPAppController {
     }
 
     try {
-      const res = await fetch(`/api/topics?subject=${subjectId}`);
-      const data = await res.json();
+      let topics = [];
+      if (window.dlpDataService) {
+        topics = await window.dlpDataService.getTopics(subjectId);
+      } else {
+        const res = await fetch(`/api/topics?subject=${subjectId}`);
+        const data = await res.json();
+        topics = data.topics || [];
+      }
 
-      if (data.success && topicListElem) {
+      if (topicListElem) {
         let html = '';
-        data.topics.forEach(t => {
+        topics.forEach(t => {
           html += `
             <label class="topic-item">
               <input type="checkbox" value="${t.id}" checked class="topic-chk" />
@@ -97,23 +103,34 @@ class DLPAppController {
     const timeLimit = parseInt(document.getElementById('quiz-timer-val').value, 10) || 20;
 
     try {
-      const res = await fetch('/api/quiz/generate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          subjectId: this.currentSubject,
-          topicIds: selectedTopicIds,
-          questionCount: qCount,
-          mode: this.selectedMode
-        })
-      });
-
-      const data = await res.json();
-      if (data.success && data.quiz.questions.length > 0) {
-        this.showView('quiz-arena-view');
-        window.quizEngine.startQuiz(data.quiz, timeLimit);
+      let quiz = null;
+      if (window.dlpDataService) {
+        quiz = await window.dlpDataService.generateQuiz(
+          this.currentSubject,
+          selectedTopicIds,
+          qCount,
+          this.selectedMode
+        );
       } else {
-        alert('No questions found for the selected topics. Please select at least one unit!');
+        const res = await fetch('/api/quiz/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            subjectId: this.currentSubject,
+            topicIds: selectedTopicIds,
+            questionCount: qCount,
+            mode: this.selectedMode
+          })
+        });
+        const data = await res.json();
+        if (data.success) quiz = data.quiz;
+      }
+
+      if (quiz && quiz.questions && quiz.questions.length > 0) {
+        this.showView('quiz-arena-view');
+        window.quizEngine.startQuiz(quiz, timeLimit);
+      } else {
+        alert('No questions found for the selected units. Please select at least one unit!');
       }
     } catch (err) {
       console.error('Error launching quiz:', err);
@@ -168,34 +185,38 @@ class DLPAppController {
     if (!modal || !listElem) return;
 
     try {
-      const url = subjectId ? `/api/leaderboard?subject=${subjectId}` : '/api/leaderboard';
-      const res = await fetch(url);
-      const data = await res.json();
+      let leaderboard = [];
+      if (window.dlpDataService) {
+        leaderboard = window.dlpDataService.getLeaderboard(subjectId);
+      } else {
+        const url = subjectId ? `/api/leaderboard?subject=${subjectId}` : '/api/leaderboard';
+        const res = await fetch(url);
+        const data = await res.json();
+        if (data.success) leaderboard = data.leaderboard;
+      }
 
-      if (data.success) {
-        let html = '';
-        data.leaderboard.forEach((lb, idx) => {
-          const avObj = AVATAR_LIST.find(a => a.id === lb.avatar_id) || AVATAR_LIST[0];
-          html += `
-            <div style="display:flex; justify-content:space-between; align-items:center; background:#0f172a; padding:0.8rem; border-radius:8px; margin-bottom:0.5rem; border:1px solid #334155;">
-              <div style="display:flex; align-items:center; gap:0.8rem;">
-                <span style="font-family:var(--font-pixel); color:var(--math-yellow);">#${idx + 1}</span>
-                <span style="font-size:1.5rem;">${avObj.icon}</span>
-                <div>
-                  <div style="font-weight:800;">${lb.student_name}</div>
-                  <div style="font-size:0.75rem; color:var(--text-muted);">${lb.subject_id === 'sains' ? '🔬 Sains DLP' : '🧮 Math DLP'} | ${lb.speed_rating}</div>
-                </div>
-              </div>
-              <div style="font-family:var(--font-pixel); color:var(--primary-cyan); font-size:1.1rem;">
-                ${lb.score} PTS
+      let html = '';
+      leaderboard.forEach((lb, idx) => {
+        const avObj = AVATAR_LIST.find(a => a.id === lb.avatar_id) || AVATAR_LIST[0];
+        html += `
+          <div style="display:flex; justify-content:space-between; align-items:center; background:#0f172a; padding:0.8rem; border-radius:8px; margin-bottom:0.5rem; border:1px solid #334155;">
+            <div style="display:flex; align-items:center; gap:0.8rem;">
+              <span style="font-family:var(--font-pixel); color:var(--math-yellow);">#${idx + 1}</span>
+              <span style="font-size:1.5rem;">${avObj.icon}</span>
+              <div>
+                <div style="font-weight:800;">${lb.student_name}</div>
+                <div style="font-size:0.75rem; color:var(--text-muted);">${lb.subject_id === 'sains' ? '🔬 Sains DLP' : '🧮 Math DLP'} | ${lb.speed_rating}</div>
               </div>
             </div>
-          `;
-        });
+            <div style="font-family:var(--font-pixel); color:var(--primary-cyan); font-size:1.1rem;">
+              ${lb.score} PTS
+            </div>
+          </div>
+        `;
+      });
 
-        listElem.innerHTML = html || '<div style="text-align:center;">No high scores yet!</div>';
-        modal.classList.add('active');
-      }
+      listElem.innerHTML = html || '<div style="text-align:center;">No high scores yet!</div>';
+      modal.classList.add('active');
     } catch (err) {
       console.error('Leaderboard error:', err);
     }

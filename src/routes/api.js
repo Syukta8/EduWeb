@@ -96,8 +96,10 @@ router.post('/quiz/generate', async (req, res) => {
         let options = [];
         let matchingPairs = [];
 
-        if (q.question_type === 'mcq' || q.question_type === 'true_false' || q.question_type === 'numeric') {
-          options = await queryAll('SELECT id, option_text, is_correct FROM options WHERE question_id = ?', [q.id]);
+        if (q.question_type === 'mcq') {
+          options = await queryAll('SELECT id, option_text, is_correct FROM options WHERE question_id = ? ORDER BY RANDOM()', [q.id]);
+        } else if (q.question_type === 'true_false' || q.question_type === 'numeric') {
+          options = await queryAll('SELECT id, option_text, is_correct FROM options WHERE question_id = ? ORDER BY id ASC', [q.id]);
         }
 
         if (q.question_type === 'drag_drop') {
